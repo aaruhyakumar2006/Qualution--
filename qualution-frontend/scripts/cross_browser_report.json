@@ -1,0 +1,114 @@
+[
+  {
+    "browser": "Google Chrome",
+    "stabilizerPass": true,
+    "statevectorPass": true,
+    "fallbackPass": true,
+    "uiFlowPass": true,
+    "details": {
+      "stabilizer": {
+        "backend": "stabilizer_wasm_core",
+        "runtime_ms": 3,
+        "p00": 0.4951171875,
+        "p11": 0.5048828125
+      },
+      "statevector": {
+        "backend": "statevector_wasm_core",
+        "runtime_ms": 0.001,
+        "amplitudes": 4,
+        "p00": 0.5,
+        "p11": 0.5
+      },
+      "fallback": {
+        "backend": "stabilizer_engine",
+        "p00": 0.5234375,
+        "p11": 0.4765625
+      }
+    },
+    "error": null
+  },
+  {
+    "browser": "Microsoft Edge",
+    "stabilizerPass": true,
+    "statevectorPass": true,
+    "fallbackPass": true,
+    "uiFlowPass": true,
+    "details": {
+      "stabilizer": {
+        "backend": "stabilizer_wasm_core",
+        "runtime_ms": 4,
+        "p00": 0.4873046875,
+        "p11": 0.5126953125
+      },
+      "statevector": {
+        "backend": "statevector_wasm_core",
+        "runtime_ms": 0.001,
+        "amplitudes": 4,
+        "p00": 0.5,
+        "p11": 0.5
+      },
+      "fallback": {
+        "backend": "stabilizer_engine",
+        "p00": 0.5029296875,
+        "p11": 0.4970703125
+      }
+    },
+    "error": null
+  },
+  {
+    "browser": "Mozilla Firefox",
+    "stabilizerPass": true,
+    "statevectorPass": true,
+    "fallbackPass": true,
+    "uiFlowPass": true,
+    "details": {
+      "stabilizer": {
+        "backend": "stabilizer_wasm_core",
+        "runtime_ms": 1,
+        "p00": 0.4970703125,
+        "p11": 0.5029296875
+      },
+      "statevector": {
+        "backend": "statevector_wasm_core",
+        "runtime_ms": 0.001,
+        "amplitudes": 4,
+        "p00": 0.5,
+        "p11": 0.5
+      },
+      "fallback": {
+        "backend": "stabilizer_engine",
+        "p00": 0.48828125,
+        "p11": 0.51171875
+      }
+    },
+    "error": null
+  },
+  {
+    "browser": "Apple Safari (WebKit)",
+    "stabilizerPass": true,
+    "statevectorPass": true,
+    "fallbackPass": true,
+    "uiFlowPass": true,
+    "details": {
+      "stabilizer": {
+        "backend": "stabilizer_wasm_core",
+        "runtime_ms": 5,
+        "p00": 0.49609375,
+        "p11": 0.50390625
+      },
+      "statevector": {
+        "backend": "statevector_wasm_core",
+        "runtime_ms": 2,
+        "amplitudes": 4,
+        "p00": 0.5,
+        "p11": 0.5
+      },
+      "fallback": {
+        "backend": "stabilizer_engine",
+        "p00": 0.4912109375,
+        "p11": 0.5087890625
+      }
+    },
+    "error": null
+  }
+]

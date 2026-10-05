@@ -1,0 +1,425 @@
+/* DigitalTwinComparisonView.css
+ * Side-by-side hardware comparison layout reusing existing QUALUTION design tokens.
+ */
+
+.dt-comparison-container {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-secondary, #161616);
+  border: 1px solid var(--border-color, #393939);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Header bar */
+.dt-comp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  background: #1e1e1e;
+  border-bottom: 1px solid var(--border-color, #393939);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.dt-comp-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dt-comp-chip-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: rgba(17, 146, 232, 0.15);
+  color: var(--wb-status-cyan, #1192e8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(17, 146, 232, 0.3);
+}
+
+.dt-comp-title-group h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary, #f4f4f4);
+  letter-spacing: -0.01em;
+}
+
+.dt-comp-title-group p {
+  margin: 2px 0 0 0;
+  font-size: 0.75rem;
+  color: var(--text-secondary, #a8a8a8);
+}
+
+.dt-comp-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dt-comp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #2a2a2a;
+  color: var(--text-primary, #f4f4f4);
+  border: 1px solid #3f3f3f;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.dt-comp-btn:hover {
+  background: #363636;
+  border-color: #555555;
+}
+
+.dt-comp-close-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary, #8d8d8d);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dt-comp-close-btn:hover {
+  color: #fff;
+  background: #282828;
+}
+
+/* Telemetry & Provenance Banner */
+.dt-comp-summary-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  padding: 12px 18px;
+  background: #181818;
+  border-bottom: 1px solid var(--border-color, #2d2d2d);
+}
+
+.dt-stat-box {
+  background: #222222;
+  border: 1px solid #333333;
+  border-radius: 6px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dt-stat-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary, #999999);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dt-stat-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+  color: #ffffff;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.dt-stat-value.fidelity-good {
+  color: var(--wb-status-success, #42be65);
+}
+
+.dt-stat-value.fidelity-loss {
+  color: var(--wb-status-danger, #ff8389);
+}
+
+.dt-provenance-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(17, 146, 232, 0.15);
+  color: var(--wb-status-cyan, #00d2ff);
+  border: 1px solid rgba(17, 146, 232, 0.35);
+  cursor: help;
+}
+
+.dt-provenance-badge.ts {
+  background: rgba(241, 194, 27, 0.15);
+  color: var(--wb-status-warning, #f1c21b);
+  border-color: rgba(241, 194, 27, 0.35);
+}
+
+/* AI Tutor Box */
+.dt-tutor-banner {
+  margin: 14px 18px;
+  padding: 12px 16px;
+  background: linear-gradient(90deg, rgba(17, 146, 232, 0.08) 0%, rgba(141, 86, 239, 0.08) 100%);
+  border: 1px solid rgba(17, 146, 232, 0.3);
+  border-left: 4px solid var(--wb-status-cyan, #1192e8);
+  border-radius: 6px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.dt-tutor-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0f62fe, #8a3ffc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.dt-tutor-content {
+  flex: 1;
+}
+
+.dt-tutor-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--wb-status-cyan, #00d2ff);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dt-tutor-text {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #f4f4f4;
+  margin: 0;
+}
+
+.dt-tutor-subtext {
+  margin: 4px 0 0 0;
+  font-size: 0.7rem;
+  color: #888888;
+  font-style: italic;
+}
+
+/* Side-by-Side Histograms */
+.dt-histograms-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 0 18px 16px 18px;
+}
+
+@media (max-width: 900px) {
+  .dt-histograms-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dt-hist-card {
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+}
+
+.dt-hist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: #202020;
+  border-bottom: 1px solid #303030;
+}
+
+.dt-hist-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #f4f4f4;
+}
+
+.dt-hist-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dt-hist-dot.ideal {
+  background: var(--wb-status-cyan, #00d2ff);
+  box-shadow: 0 0 8px rgba(0, 210, 255, 0.6);
+}
+
+.dt-hist-dot.noisy {
+  background: var(--wb-status-warning, #f1c21b);
+  box-shadow: 0 0 8px rgba(241, 194, 27, 0.6);
+}
+
+.dt-hist-sub {
+  font-size: 0.7rem;
+  color: #999999;
+}
+
+.dt-hist-body {
+  padding: 12px;
+  flex: 1;
+}
+
+/* Info Panel for Device Calibration */
+.dt-calibration-panel {
+  margin: 0 18px 18px 18px;
+  background: #181818;
+  border: 1px solid #333333;
+  border-radius: 6px;
+  padding: 14px 16px;
+}
+
+.dt-calib-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #2b2b2b;
+  padding-bottom: 8px;
+}
+
+.dt-calib-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dt-calib-badge {
+  font-size: 0.68rem;
+  background: #2a2a2a;
+  color: #a8a8a8;
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid #383838;
+}
+
+.dt-calib-columns {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 850px) {
+  .dt-calib-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dt-calib-subhead {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888888;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.dt-calib-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+  font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+}
+
+.dt-calib-table th {
+  text-align: left;
+  padding: 4px 8px;
+  color: #888888;
+  border-bottom: 1px solid #333333;
+  font-weight: 500;
+}
+
+.dt-calib-table td {
+  padding: 5px 8px;
+  color: #dddddd;
+  border-bottom: 1px solid #262626;
+}
+
+.dt-calib-table tr:last-child td {
+  border-bottom: none;
+}
+
+.dt-calib-err-pill {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 0.72rem;
+}
+
+.dt-calib-err-pill.good {
+  background: rgba(36, 161, 72, 0.2);
+  color: var(--wb-status-success, #42be65);
+}
+
+.dt-calib-err-pill.medium {
+  background: rgba(241, 194, 27, 0.2);
+  color: var(--wb-status-warning, #f1c21b);
+}
+
+.dt-calib-err-pill.high {
+  background: rgba(250, 77, 86, 0.2);
+  color: var(--wb-status-danger, #ff8389);
+}
+
+/* Loading / Empty States */
+.dt-comp-loading {
+  padding: 48px;
+  text-align: center;
+  color: #a8a8a8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.dt-spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(17, 146, 232, 0.2);
+  border-top-color: var(--wb-status-cyan, #1192e8);
+  border-radius: 50%;
+  animation: dt-spin 0.8s linear infinite;
+}
+
+@keyframes dt-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

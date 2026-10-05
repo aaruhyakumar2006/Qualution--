@@ -1,0 +1,569 @@
+[
+  {
+    "source": "infoq",
+    "title": "Java 27 Delivers Post-Quantum Cryptography, Future Language Innovation, Helidon 27, JavaFX 27",
+    "url": "https://www.infoq.com/news/2026/09/java27-released",
+    "published_at": "2026-09-16T10:00:00+00:00",
+    "abstract": "Oracle has released version 27 of the Java programming language and virtual machine. As the second non-LTS release since JDK 25, the final feature set includes nine JEPs, five of which are still progressing through the preview and incubator stages. This release focuses on strengthening security, future language innovation, and projects under the auspices of the Java Verified Portfolio. By Michael Redlich"
+  },
+  {
+    "source": "phys",
+    "title": "Q&A: How will quantum computers change society?",
+    "url": "https://phys.org/news/2026-10-qa-quantum-society.html",
+    "published_at": "2026-10-02T18:20:08+00:00",
+    "abstract": "Once called a \"pipe dream,\" quantum computers are now approaching practical use. Companies and research institutes around the world are in fierce competition to develop this technology, which has the potential to rapidly perform some calculations that are extremely difficult even for conventional supercomputers."
+  },
+  {
+    "source": "phys",
+    "title": "New method generates nearly indistinguishable photons for quantum communication",
+    "url": "https://phys.org/news/2026-10-method-generates-indistinguishable-photons-quantum.html",
+    "published_at": "2026-10-01T21:40:10+00:00",
+    "abstract": "Working in close collaboration, researchers from Paderborn University, the University of Basel and Ruhr University Bochum have made a breakthrough in quantum communication. In their recently published paper in the journal Physical Review Letters, they demonstrate how special semiconductor nanostructures can be used to generate individual photons and pairs of photons that are almost perfectly identical. These \"indistinguishable\" particles form the basis for quantum entanglement and quantum interference."
+  },
+  {
+    "source": "phys",
+    "title": "New parallel gate entangles diamond qubits 10 times faster at room temperature",
+    "url": "https://phys.org/news/2026-09-parallel-gate-entangles-diamond-qubits.html",
+    "published_at": "2026-10-01T12:40:16+00:00",
+    "abstract": "Quantum technologies rely on qubits, units of information that can exist in combinations of the states 0 and 1 instead of being limited to one or the other like conventional bits. Qubits can become entangled, which means their states become linked in ways that cannot be explained by considering each qubit separately."
+  },
+  {
+    "source": "phys",
+    "title": "3D light fields push electrons into quantum states previously beyond experimental reach",
+    "url": "https://phys.org/news/2026-09-3d-fields-electrons-quantum-states.html",
+    "published_at": "2026-09-30T17:40:26+00:00",
+    "abstract": "By superimposing two ultrashort laser pulses that converge from different directions, a team of physicists at the University of Oldenburg has succeeded in generating three-dimensional light fields."
+  },
+  {
+    "source": "phys",
+    "title": "Zinc oxide quantum dots enable faster charge detection, laying groundwork for spin qubits",
+    "url": "https://phys.org/news/2026-09-zinc-oxide-quantum-dots-enable.html",
+    "published_at": "2026-09-30T17:20:11+00:00",
+    "abstract": "Researchers at Tohoku University, in collaboration with the National Institute for Materials Science (NIMS) and the University of Tokyo, have taken an important step toward semiconductor quantum computing using zinc oxide (ZnO)."
+  },
+  {
+    "source": "phys",
+    "title": "Physicists identify 'octupolar' magnetism, with implications for quantum technologies",
+    "url": "https://phys.org/news/2026-09-physicists-octupolar-magnetism-implications-quantum.html",
+    "published_at": "2026-09-30T14:40:25+00:00",
+    "abstract": "Most magnets have two poles: north and south, or positive and negative, in a familiar arrangement called a \"dipole.\" But researchers are increasingly uncovering more complex forms of magnetism."
+  },
+  {
+    "source": "phys",
+    "title": "Crystal spacing predicts magnetic states in complex alloys better than electron count",
+    "url": "https://phys.org/news/2026-09-crystal-spacing-magnetic-states-complex.html",
+    "published_at": "2026-09-30T04:00:02+00:00",
+    "abstract": "In materials chemistry, identifying common parameters that can organize magnetic ground states across complex intermetallic compounds remains a central challenge. Researchers have long used chemically tunable parameters to control magnetic properties. One is valence-electron concentration, commonly discussed as the electron-per-atom (e/a) ratio. The e/a ratio has been widely used to classify magnetic ground states in metallic systems such as Heusler alloys and approximant crystals."
+  },
+  {
+    "source": "phys",
+    "title": "Rotating light pattern reveals laser frequency in a single image",
+    "url": "https://phys.org/news/2026-09-rotating-pattern-reveals-laser-frequency.html",
+    "published_at": "2026-09-29T15:40:10+00:00",
+    "abstract": "An international team of physicists has developed a new method for determining the precise color of laser light using an image that rotates as the laser's frequency shifts."
+  },
+  {
+    "source": "phys",
+    "title": "Experimental evidence of altermagnetism in a layered material opens a promising path toward future spintronics",
+    "url": "https://phys.org/news/2026-09-experimental-evidence-altermagnetism-layered-material.html",
+    "published_at": "2026-09-28T22:10:01+00:00",
+    "abstract": "To build the ultrafast computers of the future, scientists are looking beyond the electrical charge of electrons to another property: their spin. While conventional hardware relies on the movement of charge to process data, tapping into this intrinsic quantum property could enable researchers to reinvent how information travels through a circuit."
+  },
+  {
+    "source": "phys",
+    "title": "How to balance quantum batteries' high power with stable energy delivery",
+    "url": "https://phys.org/news/2026-09-quantum-batteries-high-power-stable.html",
+    "published_at": "2026-09-28T19:20:10+00:00",
+    "abstract": "Quantum batteries are an emerging area of research, with progress coming from theoretical studies and proof-of-principle experiments in small quantum systems. Unlike conventional chemical batteries used in everyday life, they use quantum systems to store and transfer energy. Researchers are exploring them as potential future energy sources for quantum processors and other quantum technologies."
+  },
+  {
+    "source": "phys",
+    "title": "Quantum computer boldly goes where no quantum computer has gone before: Space",
+    "url": "https://phys.org/news/2026-09-quantum-boldly-space.html",
+    "published_at": "2026-09-28T18:40:01+00:00",
+    "abstract": "There's big news from the quantum world. A quantum computer has been used in space for the first time. The device was aboard a spacecraft in low Earth orbit and demonstrated technology that could eventually help solve a problem that has been bugging satellites for years."
+  },
+  {
+    "source": "phys",
+    "title": "Mapping one atom's interaction with light uncovers an unbounded network of quantum states",
+    "url": "https://phys.org/news/2026-09-atom-interaction-uncovers-unbounded-network.html",
+    "published_at": "2026-09-28T13:40:10+00:00",
+    "abstract": "A new graph-theoretic framework provides a unified description of atom-light interactions across regimes ranging from weak to deep-strong coupling."
+  },
+  {
+    "source": "phys",
+    "title": "Magnetic order survives weak quantum fluctuations in gapless magnets",
+    "url": "https://phys.org/news/2026-09-magnetic-survives-weak-quantum-fluctuations.html",
+    "published_at": "2026-09-28T13:20:01+00:00",
+    "abstract": "In a new study published in Physical Review Letters, researchers have shown that magnetic order can survive weak quantum fluctuations in disordered magnets that lack an energy gap. The work establishes robust ferromagnetism in the two-dimensional random-bond quantum Ising model, confirming a longstanding conjecture in quantum statistical mechanics."
+  },
+  {
+    "source": "phys",
+    "title": "Ultrathin materials could make quantum light circuits programmable",
+    "url": "https://phys.org/news/2026-09-ultrathin-materials-quantum-circuits-programmable.html",
+    "published_at": "2026-09-25T19:40:01+00:00",
+    "abstract": "Quantum photonics could be a pivotal part of future quantum technology if the right materials can be created, a new review paper has found."
+  },
+  {
+    "source": "phys",
+    "title": "Spin rephasing helps quantum memories store single-photon states longer for future networks",
+    "url": "https://phys.org/news/2026-09-rephasing-quantum-memories-photon-states.html",
+    "published_at": "2026-09-25T17:10:01+00:00",
+    "abstract": "We are continuously sending information to each other, transmitting zeros and ones through a giant network of connected computers and devices. Scientists are now trying to extend this familiar concept of the internet to the quantum realm, looking for an efficient way to exchange quantum rather than classical information: qubits instead of bits. The motivation is not just scientific curiosity. Qubits can be a 0, a 1 or any superposition of the two. They can also become entangled, showing a degree of correlation that is out of reach for classical bits."
+  },
+  {
+    "source": "phys",
+    "title": "Rare quantum state reveals particles with quarter-electron charge",
+    "url": "https://phys.org/news/2026-09-rare-quantum-state-reveals-particles.html",
+    "published_at": "2026-09-25T13:00:08+00:00",
+    "abstract": "An electron's charge is normally fixed, like a coin you can't break into pieces. But if electrons are cooled close to absolute zero and trapped in a two-dimensional layer under a powerful magnetic field, they organize into a collective state of \"quasiparticles\" that seem to hold only a fraction of an electron's charge."
+  },
+  {
+    "source": "phys",
+    "title": "Random access quantum memory lets one processor select among seven storage cells",
+    "url": "https://phys.org/news/2026-09-random-access-quantum-memory-processor.html",
+    "published_at": "2026-09-25T12:00:01+00:00",
+    "abstract": "Classical computers can temporarily store the information required to perform specific tasks in a short-term memory component known as RAM (random access memory). This component allows computer processors to retrieve information from a chosen location without searching through all stored data."
+  },
+  {
+    "source": "phys",
+    "title": "Cosmic lockdown: How the environment can isolate quantum fields",
+    "url": "https://phys.org/news/2026-09-cosmic-lockdown-environment-isolate-quantum.html",
+    "published_at": "2026-09-25T04:00:01+00:00",
+    "abstract": "A simplified cosmological model suggests that decoherence can suppress quantum tunneling, effectively locking fields into the vacuum state they have reached."
+  },
+  {
+    "source": "phys",
+    "title": "Higher-dimensional black holes hide an exact symmetry in their ringing, and string-inspired gravity breaks it",
+    "url": "https://phys.org/news/2026-09-higher-dimensional-black-holes-exact.html",
+    "published_at": "2026-09-24T21:20:04+00:00",
+    "abstract": "Strike a bell, and it rings with a pitch and a fading that tell you about the bell: its size, its shape, the metal it is made of. Black holes ring too. When two merge, the newborn black hole shivers and sheds gravitational waves in a brief, dying chord, and since 2015, gravitational-wave detectors have been listening. The notes of that chord, which physicists call quasinormal modes, depend only on the black hole's mass and spin and on the law of gravity itself. Change the law, and the chord changes."
+  },
+  {
+    "source": "phys",
+    "title": "Vertical quantum sensor could reveal nanoscale magnetic patterns in quantum materials",
+    "url": "https://phys.org/news/2026-09-vertical-quantum-sensor-reveal-nanoscale.html",
+    "published_at": "2026-09-24T19:20:06+00:00",
+    "abstract": "Quantum materials do things ordinary materials cannot. They carry current without any loss, or conduct only along their outer edge while the inside insulates. Future quantum computers and quantum sensors will run on materials like these. To improve them, researchers need to see exactly where currents and magnetic fields run at the nanoscale."
+  },
+  {
+    "source": "phys",
+    "title": "New catalogs map the quantum possibilities of atomically thin materials",
+    "url": "https://phys.org/news/2026-09-quantum-possibilities-atomically-thin-materials.html",
+    "published_at": "2026-09-24T18:00:06+00:00",
+    "abstract": "Twistronics has become a new alchemy of materials. By choosing atomically thin layers, stacking them and changing their relative angle, researchers can create electronic behavior absent from the original ingredients. Twisted graphene and transition metal dichalcogenides have already yielded superconductivity and fractional Chern insulators, states with fractionally charged excitations. One of physics' most active frontiers now has a moonshot ambition: to design entirely new forms of quantum matter."
+  },
+  {
+    "source": "phys",
+    "title": "Graphene measurements reveal energy-loss and quantum-coherence exponents diverge under gate control",
+    "url": "https://phys.org/news/2026-09-graphene-reveal-energy-loss-quantum.html",
+    "published_at": "2026-09-23T21:20:04+00:00",
+    "abstract": "Scientists have shown that the two exponents (inelastic scattering exponent and dephasing exponent) commonly used to describe electron scattering in graphene do not necessarily follow the same behavior. Using gated epitaxial graphene, a multi-institutional team of researchers independently extracted the two exponents through current-heating measurements and weak-localization analysis. The contrasting gate-voltage dependence provides evidence that energy relaxation and loss of quantum phase coherence can be governed by different microscopic processes."
+  },
+  {
+    "source": "phys",
+    "title": "Scientists build world's most accurate atomic clock",
+    "url": "https://phys.org/news/2026-09-scientists-world-accurate-atomic-clock.html",
+    "published_at": "2026-09-23T20:20:03+00:00",
+    "abstract": "Take a second and turn it into trillions of moments. Measure each one. That's how precisely an atomic clock at Singapore's Centre for Quantum Technologies (CQT) keeps time—and with record-setting accuracy, according to results published in Nature on Sept. 23."
+  },
+  {
+    "source": "phys",
+    "title": "Quantum device simulates matter popping into existence",
+    "url": "https://phys.org/news/2026-09-quantum-device-simulates.html",
+    "published_at": "2026-09-23T13:40:01+00:00",
+    "abstract": "A research team led by faculty at the Duke Quantum Center (DQC) has observed string-breaking dynamics related to particle-antiparticle formation on a quantum simulator, among the first such observations in quantum physics."
+  },
+  {
+    "source": "phys",
+    "title": "Physicists crack the math connecting ultraslow quantum magnetism to ultrafast black-hole physics",
+    "url": "https://phys.org/news/2026-09-physicists-math-ultraslow-quantum-magnetism.html",
+    "published_at": "2026-09-22T22:00:03+00:00",
+    "abstract": "A team led by University at Buffalo physicists has found a mathematical solution that shows how a frustrated quantum magnet can transition from ultraslow behavior to ultrafast, highly entangled behavior resembling that of a black hole."
+  },
+  {
+    "source": "phys",
+    "title": "Light beam 'swims' upstream through a quantum fluid by violating Newton's third law",
+    "url": "https://phys.org/news/2026-09-upstream-quantum-fluid-violating-newton.html",
+    "published_at": "2026-09-22T20:10:02+00:00",
+    "abstract": "Just as a leaf drifts along with a stream, objects in other moving fluids normally drift along with the flow. That is, unless they exert energy to move against it. Although it may be less intuitive, light waves or photons work similarly. To move against a stream of light, an object or particle, like a photon, must either have an external force acting on it or actively use energy to move upstream."
+  },
+  {
+    "source": "phys",
+    "title": "Quantum protocol securely verifies a device's position using stations 2 km apart",
+    "url": "https://phys.org/news/2026-09-quantum-protocol-device-position-stations.html",
+    "published_at": "2026-09-22T13:40:03+00:00",
+    "abstract": "Reliably verifying the location of a device connected to the internet or other networks is important for various real-world applications. For instance, it could be valuable for authorizing financial transactions, securing communications and controlling who can access specific databases or services."
+  },
+  {
+    "source": "phys",
+    "title": "Nuclear-spin swap extends room-temperature entanglement lifetime up to 240-fold",
+    "url": "https://phys.org/news/2026-09-nuclear-swap-room-temperature-entanglement.html",
+    "published_at": "2026-09-21T16:40:08+00:00",
+    "abstract": "Researchers in China have extended the lifetime of entanglement in a room-temperature, solid-state system by up to a factor of 240. Led by Shuo Ren and Rui-Jian Liang at the University of Science and Technology of China in Hefei, the team transferred entangled states from the electron spins of solid-state defects to the spins of surrounding atomic nuclei, which are far more resilient to noise. The research has been published in Physical Review Letters."
+  },
+  {
+    "source": "phys",
+    "title": "Quantum communication protocol enables three users to establish a shared secure key",
+    "url": "https://phys.org/news/2026-09-quantum-communication-protocol-enables-users.html",
+    "published_at": "2026-09-21T16:00:01+00:00",
+    "abstract": "Quantum key distribution allows two users to establish secret keys whose security is grounded in the laws of quantum mechanics. Extending this capability to multiple users is an essential step toward quantum networks that support secure communication among many participants. Quantum cryptographic conferencing addresses this need by enabling multiple users to share the same secure key, which they can then use to protect group communications."
+  },
+  {
+    "source": "phys",
+    "title": "Scientists teleport quantum states across 100 parallel optical channels",
+    "url": "https://phys.org/news/2026-09-scientists-teleport-quantum-states-parallel.html",
+    "published_at": "2026-09-21T15:20:06+00:00",
+    "abstract": "Quantum communication networks consist of several connected nodes that exchange information encoded in quantum states. These networks could potentially enable more secure communications between quantum devices in different locations."
+  },
+  {
+    "source": "qiskit",
+    "title": "The Qiskit blog is moving!",
+    "url": "https://medium.com/qiskit/the-qiskit-blog-is-moving-0e7fa442c00c?source=rss----85f9df9eaa17---4",
+    "published_at": "2024-01-25T15:24:02+00:00",
+    "abstract": "That’s right, folks—we’re saying goodbye to our longtime home here on Medium.com. Check our new space at ibm.com/quantum/blog for all future Qiskit blogs. The Qiskit team has spent over seven years building a wonderful community here on the Medium platform. In that time, we’ve used this space to share not only the latest news and updates about Qiskit itself, but also to publish a collection of fascinating stories written by Qiskit users exploring the wide world of quantum software development and quantum information science. Now, we think it’s time for a change of scenery. As part of ongoing efforts at IBM to pool resources into a unified quantum experience, and to make it easier for our community to find and access the information they care about, we’re building a new home for the Qiskit blog. Moving forward, you’ll find all new Qiskit blog posts published at ibm.com/quantum/blog . Simply click the “Qiskit” tag on the menu in the top left corner of the page, and you’ll be able to see the new Qiskit blog content we plan to start publishing in the weeks and months ahead. Historical content previously posted here on Medium will remain live for your reference. We may be changing addresses, but we’ll still be bringing you the high-quality quantum computing news, resources and storytelling we’ve been producing for years. So, we hope you’ll bookmark the new blog and check in regularly. You can also follow the IBM Quantum page on LinkedIn for updates featuring the latest blog conten"
+  },
+  {
+    "source": "qiskit",
+    "title": "Coming soon: Qiskit 1.0!",
+    "url": "https://medium.com/qiskit/coming-soon-qiskit-1-0-a8d59c3533a4?source=rss----85f9df9eaa17---4",
+    "published_at": "2023-12-20T16:34:16+00:00",
+    "abstract": "By Abby Mitchell, Jake Lishman, Luciano Bello, Matthew Treinish & Blake Johnson Qiskit 1.0 will be released in February 2024 🎉 This is a huge milestone, the culmination of six years of open-source efforts, all made possible by the continued enthusiasm of thousands of users and the ongoing support of hundreds of contributors. In this article you’ll find the following: What this upcoming major version means for users How to test out 1.0 functionality before the stable release How to upgrade to Qiskit 1.0 Possible disruptions to be aware of during the transition period The article below is a repost of our original announcement on the IBM Research blog. A new phase of Qiskit development This upcoming release signals a new phase for Qiskit development, one centered on performance, stability and usability. Qiskit 1.0 is an open-source SDK for working with quantum computers at the level of extended quantum circuits, operators, and primitives. What does this mean, exactly? We have been making numerous changes over the past few minor releases to prepare for this new phase, with an emphasis on the following: A high performance code base: We have steadily been improving performance over the years, and Qiskit 1.0 is set to be the best version yet. It will enable users to build and transpile 100+ qubit circuits with comparative ease, and lay the groundwork for future 1000+ qubit capabilities. A leaner package: We’ve made changes such as the removal of the metapackage architecture, the spl"
+  },
+  {
+    "source": "qiskit",
+    "title": "A Christmas Closed-Timelike-Curve: Could the story of Scrooge actually happen in a quantum universe?",
+    "url": "https://medium.com/qiskit/a-christmas-closed-timelike-curve-could-the-story-of-scrooge-actually-happen-in-a-quantum-universe-cb22cdf8c9a7?source=rss----85f9df9eaa17---4",
+    "published_at": "2023-12-13T18:05:12+00:00",
+    "abstract": "By Maria Violaris, PhD student at the University of Oxford Traveling backwards and forwards in time is a common trope that appears often in science fiction. However, as we enter the holiday season, I find myself contemplating a famous time travel story rooted in a very different genre — specifically, a piece of Victorian era morality literature by Charles Dickens. And as usual, I’m doing it from the perspective of quantum mechanics. https://medium.com/media/aa3a8cae883b340d821f54bfe8573059/href Have you guessed the story I’m talking about? That’s right! It’s “A Christmas Carol,” the tale of the grumpy, selfish Ebenezer Scrooge who receives visits from ghosts of the past, present and future on Christmas Eve. Scrooge emerges from his experience a changed and newly generous man, but I can’t help but wonder, could the fantastical story of Scrooge really happen in a universe with quantum time-loops? In the latest installment of the Quantum Paradoxes video series on the Qiskit YouTube channel, I investigate the possibility that time-loops — more commonly known to physicists as “closed-timelike-curves” — may in fact be consistent with quantum mechanics. In this blog post, I apply my findings from that video to make sense of the story of “A Christmas Carol”. A Christmas paradox Let’s first consider the visit from the Ghost of Christmas Past. The ghost takes Scrooge to observe various happy scenes from his past. Scrooge does not interact with his past self, and his past self does not "
+  },
+  {
+    "source": "qiskit",
+    "title": "A new chapter for Qiskit algorithms and applications",
+    "url": "https://medium.com/qiskit/a-new-chapter-for-qiskit-algorithms-and-applications-5baff541e826?source=rss----85f9df9eaa17---4",
+    "published_at": "2023-11-27T13:01:49+00:00",
+    "abstract": "In recent months, the Qiskit Ecosystem has undergone a series of changes, additions, migrations, and upgrades all driven by a common goal: to provide the community with a greater role in the development of algorithms and applications. To align with this goal, we have moved the applications repositories, relocated the algorithms in Qiskit into their own repository, and welcomed external partners as additional maintainers to the repositories. This blog post delves into the hows and whys of these changes, and introduces the new maintainers. Algorithms as an independent package If you have been following our release updates, you may already be familiar with this change. Since Qiskit 0.44.0, qiskit.algorithms has been migrated to a new standalone package, qiskit-algorithms. The new library can be found in the qiskit-community GitHub organization and PyPi , and is the place to go for updated, primitive-based algorithm implementations. This move is significant because it separates the circuit-building tools from the libraries built on top of them. This separation allows algorithm development to move at a different pace than that of the core library. While Qiskit itself aims to provide a stable foundation layer for quantum development, algorithms are still an evolving field of research, and will benefit from more flexible development cycles. Community-oriented algorithms and applications In the case of the Qiskit applications modules, the repository changes have been a bit more subtl"
+  },
+  {
+    "source": "qiskit",
+    "title": "Quantum Glasses, a Qiskit Ecosystem package for Bloch sphere simulations",
+    "url": "https://medium.com/qiskit/quantum-glasses-a-qiskit-ecosystem-package-for-bloch-sphere-simulations-f443698bbb98?source=rss----85f9df9eaa17---4",
+    "published_at": "2023-11-15T15:56:43+00:00",
+    "abstract": "By Jay Shah The Bloch sphere is one of the most popular and recognizable tools for helping new learners understand quantum computing fundamentals. Now, there’s a Qiskit Ecosystem project that helps users visualize Bloch spheres with just a few clicks on a convenient GUI-based tool. The Quantum-Glasses package is a Tkinter GUI app designed to help users visualize the effects of single-qubit quantum gates via interactive Bloch Sphere simulations. Built using Qiskit, the package is a recent addition to the Qiskit Ecosystem Community Tier. It’s designed to be easy to use, and its GUI-based software allows users to build their visualizations while simultaneously studying or working — no need to worry about code. Read on to learn more about this handy tool and how you can use it! What users see through Quantum Glasses Individual qubits and single-qubit gates are some of the most fundamental building blocks of quantum computation, and the Bloch sphere provides a convenient way of visualizing them. The challenge is that Bloch spheres are not very easy to draw by hand, and there aren’t many simulators that make it easy to generate them. Quantum Glasses accomplishes this by providing a GUI app that makes it easy to produce and manipulate Bloch sphere visualizations. This, in turn, helps users visualize important quantum computing concepts to enhance their understanding of the subject. The Quantum Glasses package supports a total of 11 single-qubit gates. These 11 gates include both par"
+  },
+  {
+    "source": "qiskit",
+    "title": "Qiskit v0.45 is here!",
+    "url": "https://medium.com/qiskit/qiskit-v0-45-is-here-69e861fbfc88?source=rss----85f9df9eaa17---4",
+    "published_at": "2023-11-06T15:31:57+00:00",
+    "abstract": "By Abby Mitchell, Luciano Bello, Matthew Treinish, Jake Lishman We’re excited to announce the release of Qiskit v0.45! Read on for a summary of the key highlights and, as always, you can find the full release notes in our documentation here . With this being the last release before Qiskit 1.0, you’ll notice a lot of changes which we’ve highlighted in the article below. https://medium.com/media/2a90b517f858bdc9e088ff5dacdb1a4e/href The TL;DR The biggest updates we’re going to cover include the following: New passmanager submodule to make constructing passmanagers easier New hardware-aware synthesis functionality, so you can now write a synthesis plugin that uses hardware information New methods to make it easier to use TranspileLayout New SabrePreLayout pass to provide a better “first guess” initial layout before running SabreLayout Performance improvements due to refactoring gates into singletons (Note: Some attributes will now error because of mutability changes) Unroller pass, bind_parameters() and any duplicated gate methods are now deprecated. qiskit.extensions is pending deprecation Deprecated code from old releases (0.16, 0.19, 0.20 and 0.21) has been removed An important note about package versioning If you’re confused about version numbers and think you may have missed out on a lot — don’t panic! In our last release , we announced that we had renamed Qiskit Terra to just Qiskit. This means the python package qiskit (which used to refer to the metapackage codebase) now"
+  },
+  {
+    "source": "qiskit",
+    "title": "Enhance variational quantum algorithms with Qiskit Pulse and Qiskit Dynamics",
+    "url": "https://medium.com/qiskit/enhance-variational-quantum-algorithms-with-qiskit-pulse-and-qiskit-dynamics-768249daf8dd?source=rss----85f9df9eaa17---4",
+    "published_at": "2023-11-01T14:23:29+00:00",
+    "abstract": "By Zhiding Liang, Jinglei Cheng, and Hanrui Wang The world of quantum computing is always evolving. Researchers and scientists are constantly pushing the boundaries, looking for ways to improve the methods they use to harness the power of quantum mechanics. Variational quantum algorithms (VQAs), for example, have gained significant traction in recent years as useful tools for exploring optimization and quantum chemistry problems. But how can we make them even better? Traditionally, researchers approach VQAs at the gate-level. More specifically, they focus on the design of a type of quantum circuit structure known as the “ansatz,” which serves as a kind of template for the quantum state that we believe is close to the solution of the problem at hand. The challenge with this approach is that gate-level quantum circuits have a lot of redundancies and inefficiencies that limit the execution of intricate quantum algorithms on the noisy quantum computing hardware we have today. Fortunately, there’s a new kid on the block who could very well open up a world of possibilities for running VQA algorithms on near-term quantum hardware. It’s called the Parameterized Quantum Pulse Circuit. In this blog post, we will showcase how to use a tool from the Qiskit Ecosystem called Qiskit Dynamics to simulate the parameterized quantum pulse circuits, with a focus on the variational quantum eigensolver (VQE) algorithm. More specifically, we will demonstrate the Pulse ansatz on near-term supercondu"
+  },
+  {
+    "source": "qiskit",
+    "title": "Schrödinger’s cat meets Qiskit: Why do we never see cats that are both dead and alive?",
+    "url": "https://medium.com/qiskit/schr%C3%B6dingers-cat-meets-qiskit-why-do-we-never-see-cats-that-are-both-dead-and-alive-6e9adf7a09e0?source=rss----85f9df9eaa17---4",
+    "published_at": "2023-10-25T14:26:01+00:00",
+    "abstract": "By Maria Violaris, PhD student at the University of Oxford Can a cat be dead and alive at the same time? In 1935, quantum physicist Erwin Schrödinger came up with a thought experiment showing that, according to quantum mechanics, a cat can exist in a superposition of being alive and dead. Schrödinger’s aim was to demonstrate the absurdity of quantum mechanics. In everyday life, we never see cats that are simultaneously alive and dead — indeed, we never see any large object in a state of quantum superposition. By modelling Schrödinger’s cat as a qubit and simulating his thought experiment on a quantum computer, we can resolve the apparent paradox, and explain how even a quantum mechanical cat will always be observed as either dead or alive. Welcome back to the Quantum Paradoxes series, where we resolve quantum paradoxes using the tools of quantum computing. In addition to blog posts like this one, each instalment of the series includes a video on the Qiskit YouTube channel and a Qiskit code tutorial that shows you how to reproduce our simulations for yourself. So far, this series has covered five thought experiments ranging from the quantum bomb tester to the quantum pigeonhole paradox , and we’ve got plenty more on the way. This week, we’re centering our attention on perhaps the most famous thought experiment in the history of quantum mechanics. But before we see how quantum computing helps us resolve Schrödinger’s apparent paradox, let’s take a closer look at the original th"
+  },
+  {
+    "source": "qiskit",
+    "title": "Important changes to Qiskit documentation and learning resources",
+    "url": "https://medium.com/qiskit/important-changes-to-qiskit-documentation-and-learning-resources-7f4e346b19ab?source=rss----85f9df9eaa17---4",
+    "published_at": "2023-10-18T14:03:38+00:00",
+    "abstract": "Today, we’re announcing important changes to Qiskit.org that you should be aware of. Starting on November 29, 2023, Qiskit Documentation and Qiskit educational resources will live on IBM Quantum Platform and will be removed from Qiskit.org. We will be slowly moving content over until then. Qiskit is, first and foremost, an open source programming language and technology for programming quantum computers. We remain committed to our open source community, and value the contributions they have made since Qiskit’s inception. However, it has been challenging to maintain Qiskit documentation and educational resources in their current form. We’ve also received lots of user feedback that these resources needed to be consolidated and better-organized to make Qiskit easier to use on real quantum hardware. Our hope is that the community will no longer need to jump between scattered, disjointed resources to develop quantum programs. That’s why we’re migrating Qiskit educational resources and documentation into the IBM Quantum Platform — to offer a more unified experience for users. Our eventual plan is to sunset all of the content on Qiskit.org and move it to the IBM Quantum Platform. IBM Quantum is committed to open-source software development and education, so none of the old content is going away. Community-built content, such as the Qiskit Textbook, will be handed off to the community and remain available on GitHub. Things will look a little different — so let’s walk you through the "
+  },
+  {
+    "source": "qiskit",
+    "title": "A guide to the Qiskit circuit library",
+    "url": "https://medium.com/qiskit/a-guide-to-the-qiskit-circuit-library-36ee0f189956?source=rss----85f9df9eaa17---4",
+    "published_at": "2023-10-04T13:48:39+00:00",
+    "abstract": "By Robert Davis, Julien Gacon, Abby Mitchell, and Luciano Bello When it comes to quantum circuits, sometimes the “do it yourself” approach is best. Even for common subroutines like the quantum Fourier transform (QFT), a user may find that it’s better to build their circuit by hand, so they can implement it in a way that works for their specific use case. But in many cases, the circuits we need are well-studied, and we can avoid having to reinvent the wheel (potentially creating bugs in the process) by simply using circuits that already exist. That’s just one reason why we created the Qiskit circuit library. The Qiskit circuit library is a collection of valuable, well-studied circuits and gates that Qiskit users can easily plug into their quantum circuits. These include useful tools for a wide array of quantum computing applications—including quantum machine learning, quantum chemistry, circuits for benchmarking, and even a number of circuits that are hard to simulate classically. Whether you’re a complete beginner or a bona fide Qiskit wizard, we’re sure you’ll find something useful in our extensive circuit library module. Why every Qiskit user should give the circuit library a closer look Before we launched the circuit library a few years ago, users could only run quantum circuits they had constructed manually. If a user wanted to implement a phase estimation, a Fourier transform, or a variational circuit—really anything at all—they either had to build it themselves, or buil"
+  },
+  {
+    "source": "qjournal",
+    "title": "Spinor Bose-Einstein condensate as an analog simulator of molecular bending vibrations",
+    "url": "https://quantum-journal.org/papers/q-2026-10-01-2226",
+    "published_at": "2026-10-01T13:24:01+00:00",
+    "abstract": "Quantum 10, 2226 (2026). https://doi.org/10.22331/q-2026-10-01-2226 We demonstrate that spinor Bose-Einstein condensates (BECs) can be operated as an analog simulator of the two-dimensional vibron model. This algebraic model describes bending vibrations of molecules and, in the case of triatomic molecules, exhibits two phases where linear and bent configurations are stabilised. Spinor BECs can be engineered to simulate states that correspond to linear or bent triatomic molecules, with the Wigner function of the BEC encoding information about the molecular configuration. We show how quantum simulations of the bending dynamics of linear molecules can be realised, and how preparing a linear configuration in the bent phase leads to a dynamical instability. In the dynamics triggered by the corresponding instability, a significant amount of entanglement is generated, and we characterise the dynamics with the squeezing parameter and the quantum Fisher information (QFI). The scaling of the non-Gaussian sensitivity, described by the difference between squeezing and QFI, grows with the system size once the spinor system crosses from the linear to the bent phase, thus serving as a dynamical witness for the quantum phase transition."
+  },
+  {
+    "source": "qjournal",
+    "title": "GPU-Accelerated Quantum Simulation of Stabilizer Circuits",
+    "url": "https://quantum-journal.org/papers/q-2026-10-01-2225",
+    "published_at": "2026-10-01T09:35:34+00:00",
+    "abstract": "Quantum 10, 2225 (2026). https://doi.org/10.22331/q-2026-10-01-2225 We introduce new parallel algorithms for efficiently simulating stabilizer (Clifford) circuits on GPUs, with a focus on data-parallel tableau evolution and scalable handling of projective measurements. Our approach reformulates key bottlenecks in stabilizer simulation – such as Gaussian elimination and measurement updates – into GPU-tailored primitives that eliminate sequential dependencies and maximize memory coalescing. We implement these techniques in QuaSARQ, a GPU-accelerated stabilizer simulator designed for large qubit counts and many-shot sampling. Across a broad benchmark suite reaching 180,000 qubits and depth 1,000 (roughly 130M gates), QuaSARQ shows substantial runtime improvements, with up to 105$\\times$ speedup, and over 80% energy reduction on demanding instances. Moreover, QuaSARQ consistently outperforms Stim, a state-of-the-art CPU-optimized stabilizer simulator, as well as Qiskit-Aer (CPU/GPU), Qibo, Cirq, and PennyLane. Finally, QuaSARQ exhibits a significant advantage in many-shot sampling on large workloads. These results demonstrate that our parallel algorithms can significantly advance the scalability of stabilizer-circuit simulation, particularly for workloads involving extensive measurements and sampling. The open-source implementation of QuaSARQ is available at GitHub ."
+  },
+  {
+    "source": "qjournal",
+    "title": "Fast Bosonic Control via Multiphoton Qubit-Oscillator Interactions",
+    "url": "https://quantum-journal.org/papers/q-2026-10-01-2224",
+    "published_at": "2026-10-01T09:12:27+00:00",
+    "abstract": "Quantum 10, 2224 (2026). https://doi.org/10.22331/q-2026-10-01-2224 We study the problem of $n$-fold rotationally symmetric bosonic state preparation, which is of great importance to bosonic quantum error correction, using a multiphoton interaction between an oscillator and an auxiliary qubit. We present an $n$-photon Law-Eberly ($n$LE) protocol that serves as an analytic baseline, alongside numerical optimal control calculations that further reduce state preparation time. We find that multiphoton control protocols substantially reduce preparation times for binomial, cat, and Gottesman-Kitaev-Preskill codewords compared to schemes relying on standard linear interactions. Further, we achieve arbitrary control over the oscillator's Hilbert space by combining different multiphoton interaction orders. We also extend these control improvements to the preparation of rotationally symmetric multi-oscillator states. Lastly, numerical simulations using realistic planar superconducting circuit parameters validate the robustness of our scheme against qubit and oscillator decoherence. Our findings can significantly enhance the performance of bosonic codes on planar superconducting hardware, an important ingredient for scalable fault-tolerant quantum computers."
+  },
+  {
+    "source": "qjournal",
+    "title": "Universal Dilation of Linear Itô SDEs: Quantum Trajectories and Lindblad Simulation of Second Moments",
+    "url": "https://quantum-journal.org/papers/q-2026-10-01-2223",
+    "published_at": "2026-10-01T08:32:26+00:00",
+    "abstract": "Quantum 10, 2223 (2026). https://doi.org/10.22331/q-2026-10-01-2223 We present a universal framework for simulating $N$-dimensional linear Itô stochastic differential equations (SDEs) on quantum computers with additive or multiplicative noises. Building on a unitary dilation technique, we establish a rigorous mapping from the general linear SDEs $ dX_t = A(t) X_t dt + \\sum_{j=1}^J B_j(t)X_t dW_t^j $ to stochastic Schrödinger equations (SSE) on a dilated Hilbert space. Crucially, this embedding is pathwise exact in that the classical solution is recovered as a projection of the dilated quantum state for each fixed noise realization. We demonstrate that the resulting SSEs are naturally implementable on digital quantum processors, where the stochastic Wiener increments are encoded directly by preparing the ancillary qubits. Exploiting this physical mapping, we develop two algorithmic strategies: (1) a trajectory-based approach that uses sequential weak measurements to realize efficient stochastic integrators, including a second-order scheme, and (2) an ensemble-based approach that maps moment evolution to a deterministic Lindblad quantum master equation, enabling simulation without Monte Carlo sampling. We provide error bounds based on a stochastic light-cone analysis and validate the framework with numerical experiments."
+  },
+  {
+    "source": "qjournal",
+    "title": "Lifting the maximally-entangledness assumption in robust self-testing for synchronous games",
+    "url": "https://quantum-journal.org/papers/q-2026-10-01-2222",
+    "published_at": "2026-10-01T08:27:16+00:00",
+    "abstract": "Quantum 10, 2222 (2026). https://doi.org/10.22331/q-2026-10-01-2222 Robust self-testing in non-local games allows a classical referee to certify that two untrustworthy players are able to perform a specific quantum strategy up to high precision. Proving robust self-testing results becomes significantly easier when one restricts the allowed strategies to symmetric projective maximally entangled (PME) strategies, which allow natural descriptions in terms of tracial von Neumann algebras. This has been exploited in the celebrated $MIP*=RE$ paper and related articles to prove robust self-testing results for synchronous games when restricting to PME strategies. However, the PME assumptions are not physical, so these results need to be upgraded to make them physically relevant. In this work, we do just that: we prove that any perfect synchronous game which is a robust self-test when restricted to PME strategies, is in fact a robust self-test for all strategies. We then apply our result to the Quantum Low Degree Test to find an efficient $n$-qubit test."
+  },
+  {
+    "source": "qjournal",
+    "title": "Time symmetry in quantum theories and beyond",
+    "url": "https://quantum-journal.org/papers/q-2026-09-30-2221",
+    "published_at": "2026-09-30T13:26:55+00:00",
+    "abstract": "Quantum 10, 2221 (2026). https://doi.org/10.22331/q-2026-09-30-2221 There exists a stark tension among different formulations of quantum theory as some are inherently time-symmetric while others are time-asymmetric. This tension is crisply captured when considering physical theories as theories of processes. We present the process theory of quantum physics, QPhys, which treats classical systems as internal to quantum theory. We provide three ways to incorporate time symmetry in QPhys. The first restricts the process theory of QPhys to one that satisfies an additional retrocausality constraint. The second is a novel approach, which extends the notions of causality and retrocausality to apply to systems along with processes. Utilizing this approach, we create a toy model for particle physics , where the causal and retrocausal systems correspond to particles and anti-particles respectively. The third approach extends QPhys to a supertheory that satisfies neither a causality nor a retrocausality constraint. To avoid unphysical predictions we modify either its composition rule or its processes."
+  },
+  {
+    "source": "qjournal",
+    "title": "Evidence for Exceptional Points as Topological Defects",
+    "url": "https://quantum-journal.org/papers/q-2026-09-30-2220",
+    "published_at": "2026-09-30T08:28:32+00:00",
+    "abstract": "Quantum 10, 2220 (2026). https://doi.org/10.22331/q-2026-09-30-2220 Studies have shown that quantum states reside in a Hilbert space bundle. When a quantum system depends on continuous external parameters, these parameters define additional dimensions in the base space of the bundle. While much of the existing literature focuses on eigenstate subbundles, where geometric properties like Berry curvature arise, this work considers the entire Hilbert space bundle. Although the Hilbert space bundle has been found to be locally flat, suggesting that the system's topology may appear trivial, we revisit this assumption. Specifically, we examine how an arbitrary quantum state evolves when transported along closed parameter loops, a phenomenon characterized by holonomy. Our results demonstrate that nontrivial holonomy can emerge in the presence of exceptional points. Consequently, exceptional points naturally manifest as topological defects. Finally, we show that this nontrivial topology manifests in physical, time-dependent evolutions, providing a simple experimental signature to detect exceptional points by comparing state transport along distinct paths."
+  },
+  {
+    "source": "qjournal",
+    "title": "Performance of the spin qubit shuttling architecture for a surface code implementation",
+    "url": "https://quantum-journal.org/papers/q-2026-09-30-2219",
+    "published_at": "2026-09-30T08:21:18+00:00",
+    "abstract": "Quantum 10, 2219 (2026). https://doi.org/10.22331/q-2026-09-30-2219 Qubit shuttling promises to advance some quantum computing platforms to the qubit register sizes needed for effective quantum error correction (QEC), but also introduces additional errors whose impact must be evaluated. The established method to investigate the performance of QEC codes in a realistic scenario is to employ a standard noise model known as circuit-level noise, where all quantum operations are modeled as noisy. In the present work, we take this noise model and single out the effect of shuttling errors by introducing them as an additional so-called error location. This hardware abstraction is motivated by the SpinBus architecture and allows a systematic numerical investigation to map out the resulting two-dimensional parameter space. To this end, we take the Surface code and perform large scale simulations, most notably extracting the threshold across said two-dimensional parameter space. We study two scenarios for shuttling errors, depolarization on the one hand and dephasing on the other hand. For a purely dephasing shuttling error, we find a threshold of several percent, provided that all other operations have a high fidelity. The qubit overhead needed to reach a logical error rate of $10^{-12}$ (known as the \"teraquop\" regime [ 23 ] increases only moderately for shuttling error rates up to about 1 % per shuttling operation. The error rates at which practically useful, i.e. well below threshold"
+  },
+  {
+    "source": "qjournal",
+    "title": "Unitary causal decompositions: a characterisation via lattice theory",
+    "url": "https://quantum-journal.org/papers/q-2026-09-30-2218",
+    "published_at": "2026-09-30T07:48:28+00:00",
+    "abstract": "Quantum 10, 2218 (2026). https://doi.org/10.22331/q-2026-09-30-2218 If a unitary transformation has a circuit representation with no directed path from input $a$ to output $b$, then $a$ does not influence $b$ through the overall unitary. Conversely, if a unitary satisfies a number of no-influence conditions, it is natural to wonder whether a circuit decomposition exists in which all of them are represented by absences of paths. Such decompositions are known as causal decompositions; determining their existence in general is a central open problem in the study of causal structure in quantum theory. We present progress towards a general solution by considering the special case of unitary causal decompositions, i.e. decompositions in terms of unitary circuits in the traditional quantum circuit formalism that do not require the generalisation to 'extended' or 'routed' quantum circuits prompted by earlier research on this topic. We identify a combinatorial condition that characterises precisely those sets of no-influence constraints $G$ for which any unitary transformation satisfying $G$ admits a unitary causal decomposition representing the constraints. Our approach is systematic, grounded in lattice theory and finite-dimensional operator algebra, and offers hope for extensions to more general (e.g. routed unitary) causal decompositions in the future."
+  },
+  {
+    "source": "qjournal",
+    "title": "Order Parameter Discovery for Quantum Many-Body Systems",
+    "url": "https://quantum-journal.org/papers/q-2026-09-29-2217",
+    "published_at": "2026-09-29T10:47:12+00:00",
+    "abstract": "Quantum 10, 2217 (2026). https://doi.org/10.22331/q-2026-09-29-2217 Quantum phase transitions reveal deep insights into the behavior of many-body quantum systems, but identifying these transitions without prior knowledge of order parameters remains a significant challenge. In this work, we introduce a method for constructing phase diagrams using the vector field of the reduced fidelity susceptibility (RFS), and demonstrate how information encoded in this vector field can be used to discover observables corresponding to order parameters. We apply our approach to well-established models: the Axial Next Nearest Neighbour Interaction (ANNNI) model, a cluster state model, and a chain of Rydberg atoms; and validate the discovered order parameters using eigendecomposition and finite-size scaling analysis, confirming the expected universality classes. Our results demonstrate that the RFS vector field offers a unified framework for phase characterization and order-parameter discovery that requires no prior knowledge of symmetry or transition type, while relying only on reduced density matrices of small subsystems."
+  },
+  {
+    "source": "qjournal",
+    "title": "Truncation uncertainties for accurate quantum simulations of lattice gauge theories",
+    "url": "https://quantum-journal.org/papers/q-2026-09-24-2216",
+    "published_at": "2026-09-24T14:03:49+00:00",
+    "abstract": "Quantum 10, 2216 (2026). https://doi.org/10.22331/q-2026-09-24-2216 The encoding of lattice gauge theories onto quantum computers requires a discretization of the gauge field's Hilbert space on each link, which presents errors with respect to the Kogut–Susskind limit. In the electric basis, Hilbert space fragmentation has recently been shown to limit the excitation of large electric fields. Here, we leverage this to develop a formalism for estimating the size of truncation errors in the electric basis. Generically, the truncation error falls off as a factorial of the field truncation. Examples of this formalism are applied to the Schwinger model and a pure U(1) lattice gauge theory. For reasonable choices of parameters, we improve on previous error estimates by a factor of $10^{306}$."
+  },
+  {
+    "source": "qjournal",
+    "title": "Measuring a Quantum Measure Exceeding Unity",
+    "url": "https://quantum-journal.org/papers/q-2026-09-24-2215",
+    "published_at": "2026-09-24T06:32:36+00:00",
+    "abstract": "Quantum 10, 2215 (2026). https://doi.org/10.22331/q-2026-09-24-2215 The history based formalism known as Quantum Measure Theory (QMT) generalizes the concept of probability-measure so as to incorporate quantum interference. The resulting quantum measure $\\mu$ is defined for arbitrary events (sets of histories), not just for observables at a fixed moment of time. Thanks to interference effects, $\\mu$ can exceed unity, exhibiting its non-classical nature in a particularly striking manner. Here, in an optical experiment, we illustrate an ancilla based filtering scheme that gives operational meaning to the quantum measure. For a specific photonic event $E$, we report a measured value of $\\mu(E)=1.172^{+0.013}_{-0.019}$, which within errors agrees with the theoretical value of $5/4$, while exceeding the maximum value permissible for a classical probability (namely $1$) by $13.32$ upper or $8.89$ lower percentile widths. The directly observed quantity is an ordinary detector probability $p_D\\le 1$ (or, with laser light, an equivalent power ratio); the value $\\mu(E)\\gt1$ is inferred via the calibrated relation $\\mu(E)=2p_D$ for our filter. If an unconventional theoretical concept is to play a role in meeting the foundational challenges of quantum theory, it seems important to bring it into contact with experiment as much as possible. Our experiment does this for the quantum measure."
+  },
+  {
+    "source": "qjournal",
+    "title": "Non-stabilizerness and violations of CHSH inequalities",
+    "url": "https://quantum-journal.org/papers/q-2026-09-21-2214",
+    "published_at": "2026-09-21T14:08:35+00:00",
+    "abstract": "Quantum 10, 2214 (2026). https://doi.org/10.22331/q-2026-09-21-2214 We study quantitatively the interplay between entanglement and non-stabilizer resources in violating the CHSH inequalities. We show that, while non-stabilizer resources are necessary, they must have a specific structure, namely they need to be both asymmetric and (surprisingly) $\\textit{local}$. We employ stabilizer entropy (SE) to quantify the non-stabilizer resources involved and the probability of violation given the resources. We show how spectral quantities related to the flatness of entanglement spectrum and its relationship with non-local SE affect the CHSH inequality. Finally, we utilize these results – together with tools from representation theory – to construct a systematic way of building ensembles of states with higher probability of violation."
+  },
+  {
+    "source": "qjournal",
+    "title": "Escaping the Shadow of Bell’s Theorem in Network Nonlocality",
+    "url": "https://quantum-journal.org/papers/q-2026-09-21-2213",
+    "published_at": "2026-09-21T09:08:14+00:00",
+    "abstract": "Quantum 10, 2213 (2026). https://doi.org/10.22331/q-2026-09-21-2213 The possibility of nonclassicality in networks unrelated to Bell’s original eponymous theorem has recently attracted significant interest. Here, we identify a sufficient condition for being “outside the shadow of Bell’s theorem” and introduce a testable criterion capable of certifying the novelty of instances of network-nonclassicality which we call minimal network nonclassicality. We provide examples of minimally network nonclassical correlations realizable in quantum theory as well as examples coming from more exotic operational probabilistic theories. In particular, we apply these concepts to the simplest configuration of the 3-chain scenario (a.k.a. the bilocality scenario) to prove that certain correlations have escaped the shadow of Bell's theorem. While some of the examples herein are unprecedented, we also revisit more familiar examples of network nonclassicality in order to highlight the contrast between our approach versus prior approaches with respect to assessing novelty."
+  },
+  {
+    "source": "qjournal",
+    "title": "Heuristic and Optimal Synthesis of CNOT and Clifford Circuits",
+    "url": "https://quantum-journal.org/papers/q-2026-09-21-2212",
+    "published_at": "2026-09-21T08:20:41+00:00",
+    "abstract": "Quantum 10, 2212 (2026). https://doi.org/10.22331/q-2026-09-21-2212 Efficiently implementing Clifford circuits is crucial for quantum error correction and quantum algorithms. Linear reversible circuits, equivalent to circuits composed of CNOT\\xspace gates, have important applications in classical computing. In this work we present methods for CNOT\\xspace and general Clifford circuit synthesis which can be used to minimise either the entangling two-qubit gate count or the circuit depth. We present three families of algorithms - optimal synthesis which works on small circuits, A* synthesis for intermediate-size circuits and greedy synthesis for large circuits. We benchmark against existing methods, including rustiq, tket and qiskit and show that our approach results in circuits with lower two-qubit gate count. For encoding circuits, our methods outperform previous reinforcement learning results and find a lower two-qubit gate count circuit for the Golay code than previously known. The algorithms have been implemented in a GitHub repository for use by the classical and quantum computing community. GitHub Repository"
+  },
+  {
+    "source": "qjournal",
+    "title": "Spatial structure of multipartite entanglement at measurement induced phase transitions",
+    "url": "https://quantum-journal.org/papers/q-2026-09-18-2211",
+    "published_at": "2026-09-18T10:13:44+00:00",
+    "abstract": "Quantum 10, 2211 (2026). https://doi.org/10.22331/q-2026-09-18-2211 We study multiparty entanglement near measurement induced phase transitions (MIPTs), which arise in ensembles of local quantum circuits built with unitaries and measurements. In contrast to equilibrium quantum critical transitions, where entanglement is short-ranged, MIPTs possess long-range k-party genuine multiparty entanglement (GME) characterized by an infinite hierarchy of entanglement exponents for k$\\geq$2. First, we represent the average spread of entanglement with \"entanglement clusters\", and use them to conjecture general exponent relations: 1) classical dominance, 2) monotonicity, 3) subadditivity. We then introduce measure-weighted graphs to construct such clusters in general circuits. Second, we obtain the exact entanglement exponents for a 1d MIPT in a measurement-only circuit that maps to percolation by exploiting non-unitary conformal field theory. The exponents, which we numerically verify, obey the inequalities. We also extend the construction to a 2d MIPT that maps to classical 3d percolation, and numerically find the first entanglement exponents. Our results provide a firm ground to understand the multiparty entanglement of MIPTs, and more general ensembles of quantum circuits."
+  },
+  {
+    "source": "qjournal",
+    "title": "Generalising Aumann’s Agreement Theorem",
+    "url": "https://quantum-journal.org/papers/q-2026-09-18-2210",
+    "published_at": "2026-09-18T09:56:51+00:00",
+    "abstract": "Quantum 10, 2210 (2026). https://doi.org/10.22331/q-2026-09-18-2210 According to Aumann's celebrated theorem, rational agents cannot agree to disagree. In other words, agents who once shared a common prior probability distribution and who have common knowledge about their posteriors cannot assign different probability distributions to a given proposition. Common knowledge imposes strong restrictions on assigned probabilities. In fact, Aumann's agreement theorem was one of the first attempts to formalise and explore the role played by common knowledge in decision theory. Recently, the debate over possible (quantum) extensions of Aumann's results has resurfaced. This paper contributes to this discussion. First, we argue that agreeing to disagree is impossible in quantum theory. Secondly, by building on the quantum argument, we show that agreeing to disagree is also forbidden in any generalised probability theory. The upshot is that in its probabilistic version, the agreement theorem is a direct consequence of how we choose to condition upon acquiring new information."
+  },
+  {
+    "source": "qjournal",
+    "title": "Gibbs state preparation for commuting Hamiltonian: Mapping to classical Gibbs sampling",
+    "url": "https://quantum-journal.org/papers/q-2026-09-18-2209",
+    "published_at": "2026-09-18T09:35:22+00:00",
+    "abstract": "Quantum 10, 2209 (2026). https://doi.org/10.22331/q-2026-09-18-2209 Gibbs state preparation, or Gibbs sampling, is a key computational technique extensively used in physics, statistics, and other scientific fields. Recent efforts for designing fast mixing Gibbs samplers for quantum Hamiltonians have largely focused on commuting local Hamiltonians (CLHs), a non-trivial subclass of Hamiltonians which include highly entangled systems such as the Toric code and quantum double model. Most previous Gibbs samplers relied on simulating the Davies generator, which is a Lindbladian associated with the thermalization process in nature. Instead of using the Davies generator, we design a different Gibbs sampler for various CLHs by giving a reduction to classical Hamiltonians, in the sense that one can efficiently prepare the Gibbs state for some CLH $H$ on a quantum computer as long as one can efficiently do classical Gibbs sampling for the corresponding classical Hamiltonian $H^{(c)}$. We demonstrate that our Gibbs sampler is able to replicate state-of-the-art results as well as prepare the Gibbs state in regimes which were previously unknown, such as the low temperature region, as long as there exists fast mixing Gibbs samplers for the corresponding classical Hamiltonians. Our reductions are as follows. – If $H$ is a 2-local qudit CLH, then $H^{(c)}$ is a 2-local qudit classical Hamiltonian. – If $H$ is a 4-local qubit CLH on 2D lattice and there are no classical qubits, then $H^{(c)}$ "
+  },
+  {
+    "source": "qjournal",
+    "title": "Sparse quantum state preparation with improved Toffoli cost",
+    "url": "https://quantum-journal.org/papers/q-2026-09-10-2208",
+    "published_at": "2026-09-10T09:50:51+00:00",
+    "abstract": "Quantum 10, 2208 (2026). https://doi.org/10.22331/q-2026-09-10-2208 The preparation of quantum states is one of the most fundamental tasks in quantum computing, and a key primitive in many quantum algorithms. Of particular interest to areas such as quantum simulation and linear-system solvers are sparse quantum states, which contain only a small number $s$ of non-zero computational basis states compared to a generic state. In this work, we present an approach that prepares $s$-sparse states on $n$ qubits, reducing the number of Toffoli gates required compared to prior art. We work in the established framework of first preparing a dense state on a $\\lceil{\\log(s)}\\rceil$-qubit sub-register, and then mapping this state to the target state via an isometry, with the latter step dominating the cost of the full algorithm. The speed-up is achieved by designing an efficient algorithm for finding and implementing the isometry. The worst-case Toffoli cost of our isometry circuit, which may be viewed as a batched version of an approach by Malvetti et al., is essentially $2s$ for sufficiently large values of $n$, yielding roughly a $\\log(s)/2$ improvement factor over the state-of-the-art. In numerical benchmarks on randomly chosen states, the cost is closer to $s$. With the improved isometry circuit, we examine the dense-state preparation step and present ways to optimize the joint cost of both steps, particularly in the case of target states with purely real coefficients, by outsourcing"
+  },
+  {
+    "source": "qjournal",
+    "title": "Streaming Belief Propagation on Mixed-Alphabet Tanner Graphs for Practical Quantum Memory",
+    "url": "https://quantum-journal.org/papers/q-2026-09-10-2207",
+    "published_at": "2026-09-10T09:37:47+00:00",
+    "abstract": "Quantum 10, 2207 (2026). https://doi.org/10.22331/q-2026-09-10-2207 Reliable quantum memory under circuit-level noise requires decoders that can process syndrome information continuously and at a rate comparable to its generation. In practical quantum error correction (QEC), repeated syndrome measurements cause the number of potential error locations to grow rapidly with both code size and time. In this paper, we propose a streaming mixed-alphabet belief propagation (SM-BP) decoder. We construct a space-time Tanner graph across multiple rounds of syndrome extraction with mixed-alphabet error variables, preserving correlations arising from multi-qubit faults. Additionally, we propose an adaptive sliding window procedure that captures long error events across window boundaries and adjusts the decoding in real time. To enhance SM-BP, we introduce a technique of probabilistic error consolidation to mitigate degeneracy effects and short cycles. Our simulations demonstrate high error thresholds of 0.4% to 0.87% and strong error-floor performance for topological code families, including rotated toric, toric color, and twisted XZZX toric codes. These results show that SM-BP provides a practical decoding framework for continuous QEC under circuit-level noise."
+  },
+  {
+    "source": "qjournal",
+    "title": "Solving the Nonlinear Vlasov Equation on a Quantum Computer",
+    "url": "https://quantum-journal.org/papers/q-2026-09-10-2206",
+    "published_at": "2026-09-10T09:28:17+00:00",
+    "abstract": "Quantum 10, 2206 (2026). https://doi.org/10.22331/q-2026-09-10-2206 The practical applicability of a recent Carleman-linearization-based quantum algorithm for solving ordinary differential equations (ODEs) with quadratic nonlinearities is investigated for the nonlinear electrostatic Vlasov equation with Krook-type collision operators. The equation is discretized on a (1+1)-dimensional phase-space grid and mapped onto the input of the quantum algorithm. Upper bounds for the query and gate complexities are derived in the limit of large grid sizes and found to be polynomially larger than the time complexity of the corresponding classical algorithms, primarily due to the dimension, sparsity, and norm of the Carleman-linearized evolution matrix. The convergence criteria are shown to impose severe restrictions on physically relevant plasma applications, requiring dissipation levels far exceeding those provided by the Krook operator."
+  },
+  {
+    "source": "qjournal",
+    "title": "Breaking the Orthogonality Barrier in Quantum LDPC Codes",
+    "url": "https://quantum-journal.org/papers/q-2026-09-09-2205",
+    "published_at": "2026-09-09T08:00:06+00:00",
+    "abstract": "Quantum 10, 2205 (2026). https://doi.org/10.22331/q-2026-09-09-2205 Classical low-density parity-check (LDPC) codes are a widely deployed and well-established technology, forming the backbone of modern communication and storage systems. It is well known that, in this classical setting, increasing the girth of the Tanner graph while maintaining regular degree distributions leads simultaneously to good belief-propagation (BP) decoding performance and large minimum distance. In the quantum setting, however, this principle does not directly apply because quantum LDPC codes must satisfy additional orthogonality constraints between their parity-check matrices. When one enforces both orthogonality and regularity in a straightforward manner, the girth is typically reduced and the minimum distance becomes structurally upper bounded. In this work, we overcome this limitation by using permutation matrices with controlled commutativity and by restricting the orthogonality constraints to only the active part of the construction, while preserving regular check-matrix structures. This design circumvents conventional structural distance limitations induced by parent-matrix orthogonality, and enables the construction of quantum LDPC codes with large girth while avoiding latent low-weight logical operators. As a concrete demonstration, we construct a girth-8, (3,12)-regular $[[9216,4612, \\leq 48]]$ quantum LDPC code and show that, under BP decoding combined with a low-complexity post-processin"
+  },
+  {
+    "source": "qjournal",
+    "title": "Faster Quantum Simulation Of Markovian Open Quantum Systems Via Randomisation",
+    "url": "https://quantum-journal.org/papers/q-2026-09-03-2204",
+    "published_at": "2026-09-03T11:20:10+00:00",
+    "abstract": "Quantum 10, 2204 (2026). https://doi.org/10.22331/q-2026-09-03-2204 When simulating the dynamics of open quantum systems with quantum computers, it is essential to accurately approximate the system's behaviour while preserving the physicality of its evolution. Traditionally, for Markovian open quantum systems, this has been achieved using first and second-order Trotter-Suzuki product formulas or probabilistic algorithms. In this work, we introduce novel non-probabilistic algorithms for simulating Markovian open quantum systems using randomisation. Our methods, including first and second-order randomised Trotter-Suzuki formulas and the QDRIFT channel, not only maintain the physicality of the system's evolution but also enhance the scalability and precision of quantum simulations. We derive error bounds and step count limits for these techniques, bypassing the need for the mixing lemma typically employed in Hamiltonian simulation proofs. Furthermore, we implement these randomised algorithms using Classical Sampling (CS), demonstrating their gate complexity advantages over deterministic TS product formulas. This work systematically extends powerful randomisation techniques from Hamiltonian simulation to the general setting of Markovian open quantum systems, highlighting their potential to enable faster and more accurate simulations."
+  },
+  {
+    "source": "qjournal",
+    "title": "Quantum Max d-Cut via qudit swap operators",
+    "url": "https://quantum-journal.org/papers/q-2026-09-03-2203",
+    "published_at": "2026-09-03T08:46:06+00:00",
+    "abstract": "Quantum 10, 2203 (2026). https://doi.org/10.22331/q-2026-09-03-2203 Quantum Max Cut (QMC) problem for systems of qubits is an example of a 2-local Hamiltonian problem, and a prominent paradigm in computational complexity theory. This paper investigates the algebraic structure of a higher-dimensional analog of the QMC problem for systems of qudits. The Quantum Max $d$-Cut ($d$-QMC) problem asks for the largest eigenvalue of a Hamiltonian on a graph with $n$ vertices whose edges correspond to swap operators acting on $(\\mathbb C^d)^{\\otimes n}$. The algebra generated by the swap operators is identified as a quotient of a free algebra modulo symmetric group relations and a single additional relation of degree $d$. This presentation leads to a tailored hierarchy of semidefinite programs, leveraging noncommutative polynomial optimization (NPO) methods, that converges to the solution of the $d$-QMC problem. For a large class of complete bipartite graphs, exact solutions for the $d$-QMC problem are derived using the representation theory of symmetric groups and Littlewood-Richardson coefficients. Lastly, the paper addresses a refined $d$-QMC problem focused on finding the largest eigenvalue within each isotypic component (irreducible block) of the graph Hamiltonian. It is shown that the spectrum of the star graph Hamiltonian distinguishes between isotypic components of the $3$-QMC problem. For general $d$, low-degree relations for separating isotypic components are presented, enabli"
+  },
+  {
+    "source": "qjournal",
+    "title": "Floquetifying stabiliser codes with distance-preserving rewrites",
+    "url": "https://quantum-journal.org/papers/q-2026-09-03-2202",
+    "published_at": "2026-09-03T08:08:58+00:00",
+    "abstract": "Quantum 10, 2202 (2026). https://doi.org/10.22331/q-2026-09-03-2202 Stabiliser codes with large weight measurements can be challenging to implement fault-tolerantly. To overcome this, we propose a Floquetification procedure which, given a stabiliser code, synthesises a novel Floquet code that only uses single- and two-qubit operations. Moreover, this procedure preserves the distance and number of logicals of the original code. The new Floquet code requires additional physical qubits. This overhead is linear in the weight of the largest measurement of the original code. Our method is based on the ZX calculus, a graphical language for representing and rewriting quantum circuits. However, a problem arises with the use of ZX in the context of rewriting error-correcting codes: ZX rewrites generally do not preserve code distance. Tackling this issue, we define the notion of distance-preserving rewrite that enables the transformation of error-correcting codes without changing their distance. These distance-preserving rewrites are used to decompose arbitrary weight stabiliser measurements into quantum circuits with single- and two-qubit operations. As we only use distance-preserving rewrites, we are guaranteed that a single error in the resulting circuit creates at most a single error on the data qubits. These decompositions enable us to generalise the Floquetification procedure of Townsend-Teague et al [ 83 ] to arbitrary stabiliser codes, provably preserving the distance and number"
+  },
+  {
+    "source": "qjournal",
+    "title": "Reducing Spatial and Temporal Dimensionality in the Multidimensional Caldeira-Leggett Model",
+    "url": "https://quantum-journal.org/papers/q-2026-09-02-2201",
+    "published_at": "2026-09-02T10:33:28+00:00",
+    "abstract": "Quantum 10, 2201 (2026). https://doi.org/10.22331/q-2026-09-02-2201 Focusing on the real-time dynamics of the reduced density matrix of the multidimensional Caldeira-Leggett model, several techniques are adopted in this paper to reduce the spatial and temporal dimensionality, combined into an efficient algorithm. From a spatial perspective, an equivalent formulation of the Dyson series is presented. With the aid of a low-rank approximation, the spatial dimensionality of open quantum system simulations is halved. From a temporal perspective, the frozen Gaussian approximation is used to approximate both the evolution operator and the interaction operator in the multidimensional Caldeira-Leggett model. This reduces the high-dimensional integrals to one- and two-dimensional integrals independent of the truncation level of the Dyson series. Through these techniques, we design an efficient algorithm whose validity is verified through several numerical experiments, including a two-dimensional double slit simulation."
+  },
+  {
+    "source": "qjournal",
+    "title": "Quantum Simulation of Nuclear Dynamics in First Quantization",
+    "url": "https://quantum-journal.org/papers/q-2026-09-02-2200",
+    "published_at": "2026-09-02T09:26:47+00:00",
+    "abstract": "Quantum 10, 2200 (2026). https://doi.org/10.22331/q-2026-09-02-2200 The study of real time dynamics of nuclear systems is of great importance to provide theoretical predictions of cross sections relevant for both terrestrial experiments as well as applications in astrophysics. First principles simulations of these dynamical processes is however hindered by an exponential cost in classical resources and the possibility of performing scalable simulations using quantum computers is currently an active field of research. In this work we provide the first complete characterization of the resource requirements for studying nuclear dynamics with the full Leading Order (LO) pionless EFT Hamiltonian in first quantization employing simulation strategies using both product formulas as well as Quantum Signal Processing. In particular, we show that time evolution of such an Hamiltonian can be performed with polynomial resources in the number of particles, and logarithmic resources in the number of single-particle basis states. This result provides an exponential improvement compared with previous work on the same Hamiltonian model in second quantization. We find that interesting simulations for low energy nuclear scattering could be achievable with tens of millions of T gates and few hundred logical qubits suggesting that the study of simple nuclear reactions could be amenable for early fault tolerant quantum platforms."
+  },
+  {
+    "source": "qjournal",
+    "title": "Symmetry-enriched topological order in tensor networks: Defects, gauging and anyon condensation",
+    "url": "https://quantum-journal.org/papers/q-2026-09-01-2199",
+    "published_at": "2026-09-01T09:17:41+00:00",
+    "abstract": "Quantum 10, 2199 (2026). https://doi.org/10.22331/q-2026-09-01-2199 We study symmetry-enriched topological order in two-dimensional tensor network states by using graded matrix product operator algebras to represent symmetry-induced domain walls. A close connection to the theory of graded unitary fusion categories is established. Tensor network representations of the topological defect superselection sectors are constructed for all domain walls. The emergent symmetry-enriched topological order is extracted from these representations, including the symmetry action on the underlying anyons. Dual phase transitions, induced by gauging a global symmetry, and condensation of a bosonic subtheory, are analyzed and the relationship between topological orders on either side of the transition is derived. Several examples are worked through explicitly."
+  },
+  {
+    "source": "qjournal",
+    "title": "A brief history of quantum vs classical computational advantage",
+    "url": "https://quantum-journal.org/papers/q-2026-09-01-2198",
+    "published_at": "2026-09-01T07:06:58+00:00",
+    "abstract": "Quantum 10, 2198 (2026). https://doi.org/10.22331/q-2026-09-01-2198 In this review article we summarize all experiments claiming quantum computational advantage to date. Our review highlights challenges, loopholes, and refutations appearing in subsequent work to provide a complete picture of the current statuses of these experiments. In addition, we also discuss theoretical computational advantage in example problems such as approximate optimization and recommendation systems. Finally, we review recent experiments in quantum error correction --- the biggest frontier to reach experimental quantum advantage in Shor's algorithm."
+  },
+  {
+    "source": "qjournal",
+    "title": "Non-Gaussian Noise Magnetometry Using Local Spin Qubits",
+    "url": "https://quantum-journal.org/papers/q-2026-08-27-2197",
+    "published_at": "2026-08-27T11:50:42+00:00",
+    "abstract": "Quantum 10, 2197 (2026). https://doi.org/10.22331/q-2026-08-27-2197 Atomic scale qubits, as may be realized in nitrogen vacancy (NV) centers in diamond, offer the opportunity to study magnetic field noise with nanometer scale spatial resolution. Using these spin qubits, one can learn a great deal about the magnetic-field noise correlations, and correspondingly the collective-mode spectra, in quantum materials and devices. However, to date these tools have been essentially restricted to studying Gaussian noise processes – equivalent to linear-response. In this work we will show how to extend these techniques beyond the Gaussian regime and show how to unambiguously measure higher-order magnetic noise cumulants in a local, spatially resolved way. We unveil two protocols for doing this; the first uses a single spin-qubit and different dynamical decoupling sequences to extract non-Markovian and non-Gaussian spin-echo noise. The second protocol uses two-qubit coincidence measurements to study spatially non-local cumulants in the magnetic noise. We then demonstrate the utility of these protocols by considering a model of a bath of non-interacting two-level systems, as well as a model involving spatially correlated magnetic fluctuations near a second-order Ising phase transition. In both cases, we highlight how this technique can be used to measure in a real many-body system how fluctuation dynamics converge towards the central limit theorem as a function of effective bath size. We t"
+  },
+  {
+    "source": "aws",
+    "title": "Combating quantum noise with AWS: University of Washington Capstone Project",
+    "url": "https://aws.amazon.com/blogs/quantum-computing/combating-quantum-noise-with-aws-university-of-washington-capstone-project",
+    "published_at": "2026-09-28T16:30:53+00:00",
+    "abstract": "Quantum computers promise to solve problems beyond the reach of classical machines, but they share a stubborn adversary: noise. Quantum bits (qubits) are exquisitely sensitive to their environment, gates are imperfect, measurements introduce bias, and these errors accumulate as circuits grow. Learning to combat noise is one of the central scientific and engineering challenges standing"
+  },
+  {
+    "source": "aws",
+    "title": "Demonstrating genuine multipartite non-locality on quantum processors using Amazon Braket",
+    "url": "https://aws.amazon.com/blogs/quantum-computing/demonstrating-genuine-multipartite-non-locality-on-quantum-processors-using-amazon-braket",
+    "published_at": "2026-09-23T15:47:54+00:00",
+    "abstract": "This post was contributed by Federico Hernán Holik, Andrés Camilo Granda Arango, Carlo Cuccu, Roberto Giuntini, Giuseppe Sergioli, Peter Komar, and Ishaan Pakrasi. Quantum physics produces correlations that no classical theory can reproduce, and testing these differences on real hardware is now possible with cloud-based quantum computing through Amazon Braket. One of the most striking"
+  },
+  {
+    "source": "aws",
+    "title": "AWS and JPMorganChase collaborate to advance quantum computing R&D",
+    "url": "https://aws.amazon.com/blogs/quantum-computing/aws-and-jpmorganchase-collaborate-to-advance-quantum-computing-rd",
+    "published_at": "2026-08-05T16:46:11+00:00",
+    "abstract": "This post was contributed by Martin Schuetz and Ruben Andrist from the Amazon Advanced Solutions Lab, and Romina Yalovetzky and Atithi Acharya from Global Technology Applied Research at JPMorganChase. Quantum researchers at JPMorganChase and the Amazon Advanced Solutions Lab are working together to explore how quantum technologies may help address complex optimization problems in finance"
+  },
+  {
+    "source": "aws",
+    "title": "Thermodynamic sampling of disordered materials with an analog Hamiltonian Rydberg simulator",
+    "url": "https://aws.amazon.com/blogs/quantum-computing/thermodynamic-sampling-of-disordered-materials-with-an-analog-hamiltonian-rydberg-simulator-2",
+    "published_at": "2026-07-23T20:03:07+00:00",
+    "abstract": "This post was contributed by Mao Lin, Bruno Camino, John Buckeridge and Scott M. Woodley Many advanced materials — from battery electrodes to semiconductor alloys — owe their useful properties to atomic-scale disorder. But predicting how atoms arrange themselves at a given temperature is hard: the number of possible configurations explodes combinatorially and sampling them"
+  },
+  {
+    "source": "aws",
+    "title": "A framework for quantum-classical integration decisions",
+    "url": "https://aws.amazon.com/blogs/quantum-computing/a-framework-for-quantum-classical-integration-decisions",
+    "published_at": "2026-07-20T18:38:09+00:00",
+    "abstract": "This post was contributed by Dimitar Trenev, Sebastian Stern, Tyler Takeshita, Cedric Lin, Peter Komar, Pooja Rao, Jerome Gonthier, and Elica Kyoseva. As quantum computing matures toward fault tolerance, a pressing question faces the high-performance computing (HPC) community: why is tightly integrating quantum processors to classical supercomputing infrastructure important? Today, algorithm researchers from Amazon Web"
+  },
+  {
+    "source": "aws",
+    "title": "Explore NVIDIA CUDA-Q Applications Hub and Academic Library with Amazon Braket",
+    "url": "https://aws.amazon.com/blogs/quantum-computing/explore-nvidia-cuda-q-applications-hub-and-academic-library-with-amazon-braket",
+    "published_at": "2026-07-17T16:21:26+00:00",
+    "abstract": "Amazon Braket managed notebook instances (NBIs) now include NVIDIA CUDA-Q Applications Hub and CUDA-Q Academic Library launch notebooks, bringing peer-reviewed quantum research examples and structured learning resources directly into your Braket environment and making it simple to explore and develop hybrid quantum-classical applications. Braket NBIs support a range of Amazon Elastic Compute Cloud (Amazon EC2)"
+  },
+  {
+    "source": "aws",
+    "title": "Classiq and AWS Power Quantum-Classical Chemistry Innovation in Singapore with Hatch",
+    "url": "https://aws.amazon.com/blogs/quantum-computing/classiq-and-aws-power-quantum-classical-chemistry-innovation-in-singapore-with-hatch",
+    "published_at": "2026-06-22T13:40:35+00:00",
+    "abstract": "Introduction In biochemical processes development and analysis, binding energy, the energy released when a small molecule docks into a protein’s active site, determines how strongly a compound, such as a ligand, interacts with its protein target. Early-stage computational prediction of this quantity helps research teams prioritize candidates before committing to resource-intensive laboratory testing. Conventional methods"
+  },
+  {
+    "source": "aws",
+    "title": "AWS Deepens Strategic Collaboration with QuEra to Bring Fault-Tolerant Quantum Computing to Amazon Braket",
+    "url": "https://aws.amazon.com/blogs/quantum-computing/aws-deepens-strategic-collaboration-with-quera-to-bring-fault-tolerant-quantum-computing-to-amazon-braket",
+    "published_at": "2026-06-15T13:01:19+00:00",
+    "abstract": "AWS and QuEra will bring the first fault-tolerant quantum computers to the cloud, enabling scientifically relevant applications starting in 2028. Since launching Amazon Braket in 2020, AWS has provided customers access to quantum computing hardware across multiple modalities, helping them explore quantum algorithms and prepare for the future of accelerated computing. Today, we are announcing"
+  },
+  {
+    "source": "aws",
+    "title": "Realizing the fermionic Laughlin state on a trapped-ion quantum processor",
+    "url": "https://aws.amazon.com/blogs/quantum-computing/realizing-the-fermionic-laughlin-state-on-a-trapped-ion-quantum-processor",
+    "published_at": "2026-06-09T17:29:06+00:00",
+    "abstract": "This post was contributed by Lingnan Shen, Mao Lin, Cedric Yen-Yu Lin, Di Xiao, and Ting Cao Quantum computing is beginning to simulate forms of matter that are difficult to study in the lab or compute classically. In this work, researchers from University of Washington and Amazon Braket demonstrate one such milestone. They realized a"
+  },
+  {
+    "source": "aws",
+    "title": "Amazon Braket launches Rigetti Cepheus™-1-108Q superconducting device",
+    "url": "https://aws.amazon.com/blogs/quantum-computing/amazon-braket-launches-rigetti-cepheus-1-108q-superconducting-device",
+    "published_at": "2026-06-01T20:26:57+00:00",
+    "abstract": "This post was contributed to by Zia Mohammad, Scott Smart, Yuvraj Mohan, Mike Piech, and Rebecca Malamud Figure 1: A Rigetti quantum processing unit (QPU) inside a dilution refrigerator. Photo by Drew Bird. Amazon Braket enables customers to design and run quantum algorithms on a broad selection of quantum hardware through a unified interface. On"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "lesson_id": "lesson-8-grovers-search",
+  "steps": {
+    "checkpoint-grover-iterations": {
+      "concepts": ["grovers_search", "diffuser", "quantum_interference"],
+      "goal": "Verify optimal Grover iteration count calculation for N=4",
+      "checkpoint": {
+        "circuit_ref": "probe_grover_full_circuit",
+        "question_type": "categorical"
+      }
+    }
+  }
+}

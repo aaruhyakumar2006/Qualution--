@@ -28,10 +28,19 @@ __pycache__/
 # Video Renders & Frame Sequences (Heavy build artifacts)
 qualution-video/renders/
 
-# Build outputs
+# Build outputs & caches
 dist/
 dist-ssr/
 build/
+**/.vite/
+.vite/
+
+# Rust / Cargo build artifacts
+**/target/
+target/
+
+# Extracted archives & temporary downloads
+Qualution--main/
 
 # IDE & OS
 .vscode/
@@ -39,3 +48,4 @@ build/
 .DS_Store
 Thumbs.db
 *.log
+

@@ -1,0 +1,15 @@
+{
+  "name": "qualution-core",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "qualution_core_bg.wasm",
+    "qualution_core.js",
+    "qualution_core.d.ts"
+  ],
+  "main": "qualution_core.js",
+  "types": "qualution_core.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

@@ -1,0 +1,407 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   DigitalTwinTopologyOverlay.css
+   Hardware Qubit Topology & Physical Coupling Visualizer
+   Reuses existing Workbench Laboratory Design Tokens
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.dt-topology-overlay-container {
+  background: var(--wb-bg-panel, #161a22);
+  border: 1px solid var(--wb-border-strong, #3b4452);
+  border-radius: 8px;
+  margin: 12px 16px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  overflow: hidden;
+  animation: dt-fade-in 0.25s ease-out;
+}
+
+@keyframes dt-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dt-topology-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--wb-border, #262c36);
+  padding-bottom: 12px;
+}
+
+.dt-topology-title-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dt-topology-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--wb-text-primary, #f4f7fa);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dt-topology-device-badge {
+  background: rgba(17, 146, 232, 0.15);
+  border: 1px solid var(--wb-status-cyan, #1192e8);
+  color: var(--wb-status-cyan, #1192e8);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dt-active-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--wb-status-cyan, #1192e8);
+  box-shadow: 0 0 8px var(--wb-status-cyan, #1192e8);
+  animation: dt-pulse 1.8s infinite;
+}
+
+@keyframes dt-pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+}
+
+.dt-topology-stats-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 11px;
+  color: var(--wb-text-secondary, #9aa5b5);
+}
+
+.dt-topology-stat-pill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--wb-bg-elevated, #1e232d);
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--wb-border, #262c36);
+}
+
+.dt-topology-stat-pill strong {
+  color: var(--wb-text-primary, #f4f7fa);
+}
+
+.dt-topology-close-btn {
+  background: transparent;
+  border: none;
+  color: var(--wb-text-muted, #677487);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.dt-topology-close-btn:hover {
+  background: var(--wb-bg-surface-hover, #262c38);
+  color: var(--wb-text-primary, #f4f7fa);
+}
+
+/* ── SVG Graph Area ─────────────────────────────────────────────────── */
+
+.dt-graph-wrapper {
+  background: var(--wb-bg-canvas, #0e1117);
+  border: 1px solid var(--wb-border, #262c36);
+  border-radius: 6px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 220px;
+}
+
+.dt-topology-svg {
+  width: 100%;
+  max-width: 760px;
+  height: 220px;
+  overflow: visible;
+}
+
+/* Physical Qubit Node */
+.dt-qubit-node {
+  cursor: default;
+  transition: transform 0.2s ease;
+}
+
+.dt-qubit-node:hover {
+  transform: scale(1.06);
+}
+
+.dt-qubit-circle {
+  fill: var(--wb-bg-elevated, #1e232d);
+  stroke: var(--wb-border-strong, #3b4452);
+  stroke-width: 2.5;
+  transition: all 0.2s ease;
+}
+
+.dt-qubit-node.in-circuit .dt-qubit-circle {
+  stroke: var(--wb-status-cyan, #1192e8);
+  filter: drop-shadow(0 0 6px rgba(17, 146, 232, 0.4));
+}
+
+.dt-qubit-label {
+  fill: var(--wb-text-primary, #f4f7fa);
+  font-size: 13px;
+  font-weight: 700;
+  font-family: monospace;
+}
+
+.dt-qubit-sublabel {
+  fill: var(--wb-text-secondary, #9aa5b5);
+  font-size: 10px;
+  font-family: monospace;
+}
+
+/* Coupling Edges */
+.dt-physical-edge {
+  stroke-width: 3.5;
+  transition: stroke 0.2s ease;
+}
+
+.dt-physical-edge.error-low {
+  stroke: var(--wb-status-success, #21c79a);
+}
+
+.dt-physical-edge.error-med {
+  stroke: var(--wb-status-warning, #e7a93b);
+}
+
+.dt-physical-edge.error-high {
+  stroke: var(--wb-status-danger, #e05252);
+}
+
+.dt-physical-edge.gate-active {
+  stroke-width: 5;
+  filter: drop-shadow(0 0 8px currentColor);
+}
+
+/* Edge Error Badge */
+.dt-edge-badge-rect {
+  fill: var(--wb-bg-app, #090c10);
+  stroke: var(--wb-border, #262c36);
+  stroke-width: 1;
+  rx: 3px;
+}
+
+.dt-edge-badge-text {
+  font-size: 9.5px;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+/* Non-adjacent Gate Violation (SWAP overhead arch) */
+.dt-non-adjacent-arch {
+  fill: none;
+  stroke: var(--wb-status-danger, #e05252);
+  stroke-width: 2.5;
+  stroke-dasharray: 6 4;
+  animation: dt-dash-march 1.5s linear infinite;
+  filter: drop-shadow(0 0 6px rgba(224, 82, 82, 0.6));
+}
+
+@keyframes dt-dash-march {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.dt-non-adjacent-marker-rect {
+  fill: rgba(224, 82, 82, 0.18);
+  stroke: var(--wb-status-danger, #e05252);
+  stroke-width: 1.5;
+  rx: 4px;
+}
+
+.dt-non-adjacent-marker-text {
+  fill: var(--wb-status-danger, #e05252);
+  font-size: 10px;
+  font-weight: 700;
+  font-family: monospace;
+}
+
+/* ── Educational Legend & Warnings ──────────────────────────────────── */
+
+.dt-topology-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dt-legend-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 11px;
+  color: var(--wb-text-secondary, #9aa5b5);
+  background: var(--wb-bg-elevated, #1e232d);
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--wb-border, #262c36);
+}
+
+.dt-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dt-legend-color-box {
+  width: 12px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.dt-legend-color-box.success {
+  background: var(--wb-status-success, #21c79a);
+}
+
+.dt-legend-color-box.warning {
+  background: var(--wb-status-warning, #e7a93b);
+}
+
+.dt-legend-color-box.danger {
+  background: var(--wb-status-danger, #e05252);
+}
+
+.dt-legend-color-box.dashed {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--wb-status-danger, #e05252),
+    var(--wb-status-danger, #e05252) 3px,
+    transparent 3px,
+    transparent 6px
+  );
+}
+
+/* Callout Card */
+.dt-educational-card {
+  padding: 12px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.dt-educational-card.violation {
+  background: rgba(224, 82, 82, 0.08);
+  border: 1px solid rgba(224, 82, 82, 0.35);
+  color: var(--wb-text-primary, #f4f7fa);
+}
+
+.dt-educational-card.clean {
+  background: rgba(33, 199, 154, 0.08);
+  border: 1px solid rgba(33, 199, 154, 0.35);
+  color: var(--wb-text-primary, #f4f7fa);
+}
+
+.dt-educational-card-header {
+  font-weight: 700;
+  font-size: 12.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.dt-educational-card.violation .dt-educational-card-header {
+  color: var(--wb-status-danger, #e05252);
+}
+
+.dt-educational-card.clean .dt-educational-card-header {
+  color: var(--wb-status-success, #21c79a);
+}
+
+.dt-violation-list {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.dt-violation-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(224, 82, 82, 0.15);
+  border: 1px solid var(--wb-status-danger, #e05252);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: #ff8888;
+}
+
+/* Toolbar button styling */
+.btn-toolbar-topology-mirror {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: var(--wb-bg-elevated, #1e232d);
+  border: 1px solid var(--wb-border, #262c36);
+  border-radius: 4px;
+  color: var(--wb-text-secondary, #9aa5b5);
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.btn-toolbar-topology-mirror:hover {
+  background: var(--wb-bg-surface-hover, #262c38);
+  color: var(--wb-text-primary, #f4f7fa);
+  border-color: var(--wb-border-strong, #3b4452);
+}
+
+.btn-toolbar-topology-mirror.active {
+  background: rgba(17, 146, 232, 0.14);
+  border-color: var(--wb-status-cyan, #1192e8);
+  color: var(--wb-status-cyan, #1192e8);
+  box-shadow: 0 0 10px rgba(17, 146, 232, 0.25);
+}
+
+.btn-toolbar-topology-mirror.active .active-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--wb-status-cyan, #1192e8);
+  box-shadow: 0 0 6px var(--wb-status-cyan, #1192e8);
+}

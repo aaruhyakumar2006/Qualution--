@@ -1,0 +1,54 @@
+/* ═══════════════════════════════════════════════════════════════
+   MARIO ACTIVE RUNNER COMPANION AVATAR (NO COIN DISC)
+   ═══════════════════════════════════════════════════════════════ */
+
+.mario-companion-avatar {
+  position: relative;
+  display: inline-block;
+  user-select: none;
+  cursor: grab;
+  overflow: visible !important;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.45));
+  transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.15s ease;
+}
+
+.mario-companion-avatar:hover {
+  transform: scale(1.15) translateY(-4px);
+  filter: drop-shadow(0 6px 12px rgba(255, 215, 0, 0.7)) drop-shadow(0 3px 0 #000);
+}
+
+.mario-companion-avatar.is-dragging {
+  cursor: grabbing;
+  transform: scale(1.22);
+}
+
+.mario-companion-avatar.mario-hopping {
+  animation: mario-character-hop 0.25s ease-out;
+}
+
+@keyframes mario-character-hop {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+  100% { transform: translateY(0); }
+}
+
+.mario-active-character-sprite {
+  image-rendering: pixelated;
+  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.3));
+}
+
+.mario-dust-cloud {
+  animation: dust-fade 0.25s ease-out forwards;
+}
+
+@keyframes dust-fade {
+  0% {
+    opacity: 0.9;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0.1;
+    transform: translateX(-6px);
+  }
+}

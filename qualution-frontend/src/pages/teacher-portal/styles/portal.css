@@ -1,0 +1,618 @@
+/* =========================================================
+   QUALUTION — TEACHER / RESEARCHER PORTAL
+   Neo-Brutalist Stylesheet Inspired by SSN-SNUC Invente '26
+   ========================================================= */
+
+
+/* Top Navigation Bar */
+.portal-header {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  background: var(--bg-page);
+  border-bottom: var(--border-thick);
+}
+
+.portal-nav-shell {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1.25rem;
+  gap: 1rem;
+}
+
+.logo-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.logo-cube {
+  width: 38px;
+  height: 38px;
+  background: var(--yellow);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 1.3rem;
+  transform: rotate(-3deg);
+  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.logo-brand:hover .logo-cube {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.logo-title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.4rem;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.logo-sub {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-secondary);
+}
+
+.nav-links-scroll {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  overflow-x: auto;
+  padding: 0.2rem 0;
+}
+
+.nav-link-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 0.4rem 0.75rem;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.nav-link-btn:hover {
+  background: var(--paper-white);
+  border: var(--border-thin);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-link-btn.active {
+  background: var(--yellow);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-right-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Impact Strip (Numerical Blocks) */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.impact-block {
+  background: var(--paper-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-md);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.impact-block:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.impact-block-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 0.25rem 0.6rem;
+  border-left: var(--border-thick);
+  border-bottom: var(--border-thick);
+}
+
+.impact-number {
+  font-family: var(--font-display);
+  font-size: 2.75rem;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.impact-label {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-secondary);
+}
+
+/* Hero Section */
+.hero-container {
+  padding: 3.5rem 1rem 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--lime);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-sm);
+  padding: 0.35rem 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.25rem;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.hero-title .highlight-box {
+  background: var(--yellow);
+  padding: 0.1em 0.3em;
+  border: var(--border-thick);
+  box-shadow: var(--shadow-md);
+  display: inline-block;
+  transform: rotate(-1deg);
+}
+
+.hero-subtitle {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  color: var(--ink-secondary);
+  max-width: 720px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Dashboard KPI Grid */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.kpi-card {
+  background: var(--paper-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-md);
+  padding: 1.25rem 1rem;
+  position: relative;
+}
+
+.kpi-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: var(--yellow);
+  border-bottom: 2px solid var(--ink);
+}
+
+.kpi-card.kpi-lime::before { background: var(--lime); }
+.kpi-card.kpi-pink::before { background: var(--pink); }
+.kpi-card.kpi-cyan::before { background: var(--cyan); }
+.kpi-card.kpi-purple::before { background: var(--purple); }
+.kpi-card.kpi-orange::before { background: var(--orange); }
+
+.kpi-title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.kpi-val {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* Course Management Cards */
+.course-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.course-card {
+  background: var(--paper-white);
+  border: var(--border-heavy);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.course-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.course-card-header {
+  padding: 1.25rem;
+  border-bottom: var(--border-thick);
+  background: var(--paper-cream);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.course-card-body {
+  padding: 1.25rem;
+  flex: 1;
+}
+
+.course-metrics-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 1rem 0;
+  background: var(--paper-tint);
+  border: var(--border-thin);
+  padding: 0.75rem;
+}
+
+/* Learning Path Builder (Mario-style connected graph) */
+.path-canvas {
+  background: var(--paper-cream);
+  border: var(--border-heavy);
+  box-shadow: var(--shadow-lg);
+  padding: 2rem;
+  position: relative;
+  overflow-x: auto;
+}
+
+.path-step-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  position: relative;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.path-connector-line {
+  width: 4px;
+  height: 32px;
+  background: var(--ink);
+  margin: -0.25rem 0;
+  position: relative;
+}
+
+.path-connector-line::after {
+  content: '▼';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  color: var(--ink);
+}
+
+.path-node-card {
+  width: 100%;
+  background: var(--paper-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-md);
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: grab;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.path-node-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* 3-Column Studio for Lesson Builder */
+.studio-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr 320px;
+  gap: 1.25rem;
+  min-height: 680px;
+}
+
+@media (max-width: 1100px) {
+  .studio-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.studio-panel {
+  background: var(--paper-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.studio-panel-header {
+  padding: 0.75rem 1rem;
+  background: var(--paper-cream);
+  border-bottom: var(--border-thick);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-block-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-bottom: var(--border-thin);
+  background: var(--paper-white);
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.content-block-item:hover {
+  background: var(--yellow);
+  transform: translateX(4px);
+}
+
+/* Quantum Circuit Board */
+.circuit-board {
+  background: #111417;
+  color: #ECEFF4;
+  border: var(--border-thick);
+  box-shadow: var(--shadow-md);
+  padding: 1.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+}
+
+.circuit-wire-row {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.qubit-label-box {
+  width: 70px;
+  height: 38px;
+  background: var(--yellow);
+  color: var(--ink);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0px 0px #000;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+}
+
+.circuit-wire-line {
+  position: absolute;
+  left: 85px;
+  right: 0;
+  height: 2px;
+  background: #4C566A;
+  z-index: 1;
+}
+
+.gates-track {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  position: relative;
+  z-index: 2;
+  margin-left: 1rem;
+}
+
+.gate-box {
+  min-width: 42px;
+  height: 42px;
+  border: 2px solid #000;
+  font-weight: 900;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 0px 0px #000;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+  user-select: none;
+}
+
+.gate-box:hover {
+  transform: scale(1.1);
+}
+
+.gate-h { background: var(--yellow); color: var(--ink); }
+.gate-x { background: var(--pink); color: var(--ink); }
+.gate-y { background: var(--cyan); color: var(--ink); }
+.gate-z { background: var(--lime); color: var(--ink); }
+.gate-cnot { background: #FFFFFF; color: var(--ink); }
+.gate-measure { background: var(--orange); color: var(--ink); }
+
+/* Table styling Neo-brutalism */
+.neo-table-container {
+  overflow-x: auto;
+  border: var(--border-thick);
+  box-shadow: var(--shadow-md);
+  background: var(--paper-white);
+}
+
+.neo-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.neo-table th {
+  background: var(--paper-cream);
+  border-bottom: var(--border-thick);
+  border-right: var(--border-thin);
+  padding: 0.75rem 1rem;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.neo-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: var(--border-thin);
+  border-right: var(--border-thin);
+  font-size: 0.85rem;
+}
+
+.neo-table tr:hover td {
+  background: #FFFDF4;
+}
+
+/* Classroom view visual progression tree */
+.classroom-grid-view {
+  background: var(--paper-cream);
+  border: var(--border-heavy);
+  box-shadow: var(--shadow-lg);
+  padding: 2rem;
+}
+
+.classroom-branch {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin: 2.5rem 0;
+}
+
+.student-avatar-chip {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  background: var(--yellow);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.7rem;
+  box-shadow: 1px 1px 0px 0px var(--ink);
+  cursor: pointer;
+  margin-right: -6px;
+  transition: transform 0.15s ease, z-index 0.15s ease;
+}
+
+.student-avatar-chip:hover {
+  transform: scale(1.3) translateY(-4px);
+  z-index: 10;
+}
+
+/* Certificate Neo-brutalist preview */
+.certificate-frame {
+  background: #FFFDF7;
+  border: 12px double var(--ink);
+  box-shadow: var(--shadow-xl);
+  padding: 3rem 2.5rem;
+  position: relative;
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.certificate-seal {
+  width: 80px;
+  height: 80px;
+  border: 4px solid var(--ink);
+  background: var(--yellow);
+  box-shadow: var(--shadow-md);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.1rem;
+  margin: 0 auto;
+}

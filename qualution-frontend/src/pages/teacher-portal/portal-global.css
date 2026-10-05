@@ -1,0 +1,355 @@
+:root {
+  --bg-page: #FFF9F3;
+  --bg-grid-line: rgba(31, 31, 31, 0.07);
+  --ink: #1F1F1F;
+  --ink-secondary: #4A4A4A;
+  --ink-muted: #737373;
+  --paper-white: #FFFFFF;
+  --paper-cream: #FAF6ED;
+  --paper-tint: #F3EFE6;
+  
+  /* Neo-brutalist Accents from Invente '26 */
+  --yellow: #FFC83B;
+  --yellow-hover: #FFD12E;
+  --lime: #B0EF9E;
+  --lime-hover: #9AE885;
+  --pink: #FE90E9;
+  --pink-hover: #FF70DF;
+  --cyan: #C1F8FF;
+  --cyan-hover: #8FE8F5;
+  --orange: #FFA94D;
+  --purple: #D0BFFF;
+  --crimson: #FF6B6B;
+  
+  /* Borders and Hard Shadows */
+  --border-thick: 2px solid var(--ink);
+  --border-heavy: 3px solid var(--ink);
+  --border-thin: 1px solid var(--ink);
+  --shadow-sm: 2px 2px 0px 0px var(--ink);
+  --shadow-md: 4px 4px 0px 0px var(--ink);
+  --shadow-lg: 6px 6px 0px 0px var(--ink);
+  --shadow-xl: 8px 8px 0px 0px var(--ink);
+  --shadow-alt: 4px 4px 0px 0px #8A857A;
+
+  /* Fonts */
+  --font-display: 'Outfit', 'Space Grotesk', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Teacher Portal Active Scoped Styles */
+body.teacher-portal-active,
+.teacher-portal-scope {
+  font-family: var(--font-body);
+  background-color: var(--bg-page);
+  color: var(--ink);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.teacher-portal-active {
+  min-height: 100vh;
+}
+
+/* Background grid identical to ssnsnucinvente.com */
+.bg-grid {
+  background-color: var(--bg-page);
+  background-image: 
+    linear-gradient(to right, var(--bg-grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--bg-grid-line) 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-position: -1px -1px;
+}
+
+/* Scrollbar Neo-brutalism (scoped strictly to Teacher Portal) */
+body.teacher-portal-active ::-webkit-scrollbar,
+.teacher-portal-scope ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+body.teacher-portal-active ::-webkit-scrollbar-track,
+.teacher-portal-scope ::-webkit-scrollbar-track {
+  background: var(--paper-cream);
+  border-left: 2px solid var(--ink);
+}
+body.teacher-portal-active ::-webkit-scrollbar-thumb,
+.teacher-portal-scope ::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+  border: 2px solid var(--ink);
+}
+body.teacher-portal-active ::-webkit-scrollbar-thumb:hover,
+.teacher-portal-scope ::-webkit-scrollbar-thumb:hover {
+  background: var(--ink);
+}
+
+/* Typography Headings (scoped to Teacher Portal) */
+body.teacher-portal-active h1,
+body.teacher-portal-active h2,
+body.teacher-portal-active h3,
+body.teacher-portal-active h4,
+body.teacher-portal-active h5,
+body.teacher-portal-active h6,
+.teacher-portal-scope h1,
+.teacher-portal-scope h2,
+.teacher-portal-scope h3,
+.teacher-portal-scope h4,
+.teacher-portal-scope h5,
+.teacher-portal-scope h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Neo-brutalist Button Styles */
+.btn-neo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+  background: var(--yellow);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  user-select: none;
+}
+
+.btn-neo:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-lg);
+  background-color: var(--yellow-hover);
+}
+
+.btn-neo:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px var(--ink);
+}
+
+.btn-neo-lime {
+  background: var(--lime);
+}
+.btn-neo-lime:hover {
+  background: var(--lime-hover);
+}
+
+.btn-neo-pink {
+  background: var(--pink);
+}
+.btn-neo-pink:hover {
+  background: var(--pink-hover);
+}
+
+.btn-neo-cyan {
+  background: var(--cyan);
+}
+.btn-neo-cyan:hover {
+  background: var(--cyan-hover);
+}
+
+.btn-neo-white {
+  background: var(--paper-white);
+}
+.btn-neo-white:hover {
+  background: var(--paper-cream);
+}
+
+.btn-neo-dark {
+  background: var(--ink);
+  color: #FFFFFF;
+  box-shadow: var(--shadow-alt);
+}
+.btn-neo-dark:hover {
+  background: #333333;
+}
+
+.btn-neo-sm {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  box-shadow: var(--shadow-sm);
+}
+.btn-neo-sm:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Neo-brutalist Card */
+.neo-card {
+  background: var(--paper-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+}
+
+.neo-card-interactive:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Neo Badge Pill */
+.neo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: var(--border-thin);
+  background: var(--yellow);
+  color: var(--ink);
+}
+
+.neo-badge-lime { background: var(--lime); }
+.neo-badge-pink { background: var(--pink); }
+.neo-badge-cyan { background: var(--cyan); }
+.neo-badge-white { background: var(--paper-white); }
+.neo-badge-dark { background: var(--ink); color: #fff; }
+
+/* Marquee / Ticker Tape */
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: var(--ink);
+  color: var(--yellow);
+  padding: 0.5rem 0;
+  border-top: var(--border-thick);
+  border-bottom: var(--border-thick);
+  user-select: none;
+}
+
+.ticker-content {
+  display: flex;
+  white-space: nowrap;
+  animation: tickerScroll 24s linear infinite;
+  gap: 2rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@keyframes tickerScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Form controls */
+.neo-input {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  border: var(--border-thick);
+  background: var(--paper-white);
+  color: var(--ink);
+  outline: none;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.15s ease;
+}
+
+.neo-input:focus {
+  box-shadow: var(--shadow-md);
+  border-color: var(--ink);
+  background: #FFFDF8;
+}
+
+/* Tabs Header */
+.neo-tab-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  border-bottom: var(--border-thick);
+  background: var(--paper-cream);
+  padding: 0.5rem 0.75rem 0;
+}
+
+.neo-tab-item {
+  padding: 0.5rem 1rem;
+  font-family: var(--font-heading);
+  font-size: 0.825rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: var(--border-thick);
+  border-bottom: none;
+  background: var(--paper-tint);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  position: relative;
+  top: 2px;
+}
+
+.neo-tab-item:hover {
+  background: var(--yellow);
+}
+
+.neo-tab-item.active {
+  background: var(--paper-white);
+  box-shadow: -2px -2px 0px 0px rgba(0,0,0,0.1);
+  top: 0px;
+  padding-bottom: calc(0.5rem + 2px);
+  border-bottom: 2px solid var(--paper-white);
+}
+
+/* Modal Backdrop */
+.neo-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(31, 31, 31, 0.65);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+  animation: fadeIn 0.15s ease-out;
+}
+
+.neo-modal-content {
+  background: var(--bg-page);
+  border: var(--border-heavy);
+  box-shadow: var(--shadow-xl);
+  max-width: 850px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modalPop 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalPop {
+  from { transform: scale(0.95) translateY(10px); opacity: 0; }
+  to { transform: scale(1) translateY(0); opacity: 1; }
+}

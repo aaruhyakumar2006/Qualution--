@@ -1,0 +1,21 @@
+{
+  "lesson_id": "groverLesson",
+  "steps": {
+    "scene_05": {
+      "concepts": ["hadamard_gate", "superposition", "multi_qubit_systems"],
+      "goal": "Verify student prediction for 2-qubit equal superposition probability distribution",
+      "checkpoint": {
+        "circuit_ref": "probe_grover_superposition",
+        "question_type": "categorical"
+      }
+    },
+    "scene_14": {
+      "concepts": ["grovers_search", "oracle", "diffuser"],
+      "goal": "Verify student prediction of Grover search final measurement outcome",
+      "checkpoint": {
+        "circuit_ref": "probe_grover_full_circuit",
+        "question_type": "categorical"
+      }
+    }
+  }
+}

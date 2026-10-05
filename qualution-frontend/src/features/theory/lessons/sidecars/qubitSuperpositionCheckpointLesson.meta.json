@@ -1,0 +1,13 @@
+{
+  "lesson_id": "qubit-superposition-checkpoint",
+  "steps": {
+    "measure-plus": {
+      "concepts": ["hadamard_gate", "superposition", "measurement_collapse"],
+      "goal": "Predict measurement probability of Hadamard superposition state |+>",
+      "checkpoint": {
+        "circuit_ref": "probe_hadamard_superposition",
+        "question_type": "categorical"
+      }
+    }
+  }
+}

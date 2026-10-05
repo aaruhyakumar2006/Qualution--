@@ -1,0 +1,82 @@
+[
+  {
+    "turn": 1,
+    "misconception_id": "hadamard-inverts-classical",
+    "hint_level": 1,
+    "path_used": "llm_verified",
+    "duration_seconds": 8.147,
+    "text": "What effect does the Hadamard gate have on a qubit in the |0> state?"
+  },
+  {
+    "turn": 2,
+    "misconception_id": "hadamard-inverts-classical",
+    "hint_level": 2,
+    "path_used": "llm_verified",
+    "duration_seconds": 6.452,
+    "text": "What happens to the Bloch vector when a Hadamard gate is applied to |0>?"
+  },
+  {
+    "turn": 3,
+    "misconception_id": "superposition-not-mixture",
+    "hint_level": 1,
+    "path_used": "llm_verified",
+    "duration_seconds": 8.351,
+    "text": "If a qubit is in a superposition of 0 and 1, what happens when it passes through two identical quantum gates?"
+  },
+  {
+    "turn": 4,
+    "misconception_id": "superposition-not-mixture",
+    "hint_level": 3,
+    "path_used": "llm_verified",
+    "duration_seconds": 4.901,
+    "text": "When two quantum probability amplitudes overlap, do they add together or cancel each other out?"
+  },
+  {
+    "turn": 5,
+    "misconception_id": "measurement-deterministic",
+    "hint_level": 1,
+    "path_used": "template_fallback",
+    "duration_seconds": 7.94,
+    "text": "What state is created before measurement?"
+  },
+  {
+    "turn": 6,
+    "misconception_id": "measurement-deterministic",
+    "hint_level": 2,
+    "path_used": "llm_verified",
+    "duration_seconds": 6.964,
+    "text": "Can the Born rule predict the exact outcome of a measurement on a superposition state like |+>?"
+  },
+  {
+    "turn": 7,
+    "misconception_id": "grover-oracle-bit-flip",
+    "hint_level": 1,
+    "path_used": "llm_verified",
+    "duration_seconds": 2.594,
+    "text": "What happens when a qubit's state is measured after a controlled-NOT operation?"
+  },
+  {
+    "turn": 8,
+    "misconception_id": "grover-oracle-bit-flip",
+    "hint_level": 2,
+    "path_used": "llm_verified",
+    "duration_seconds": 2.951,
+    "text": "If the ancilla qubit reflects relative phase, what is its initial state?"
+  },
+  {
+    "turn": 9,
+    "misconception_id": "grover-over-iteration",
+    "hint_level": 1,
+    "path_used": "llm_verified",
+    "duration_seconds": 2.221,
+    "text": "What happens to the state amplitude when it passes through the Grover operator in a 2D subspace?"
+  },
+  {
+    "turn": 10,
+    "misconception_id": "grover-over-iteration",
+    "hint_level": 3,
+    "path_used": "llm_verified",
+    "duration_seconds": 2.881,
+    "text": "What changes when the optimal rotation angle is increased beyond its optimal value?"
+  }
+]
