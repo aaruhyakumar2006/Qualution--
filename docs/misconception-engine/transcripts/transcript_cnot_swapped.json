@@ -1,0 +1,69 @@
+{
+  "scenario": "transcript_cnot_swapped",
+  "misconception_id": "cnot-control-target-swapped",
+  "turns": [
+    {
+      "turn_number": 1,
+      "student_input": "I thought qubit 1 was the control, so qubit 0 would stay unchanged.",
+      "mario_output": "Mario: Notice how the quantum transformation affects state probabilities.",
+      "metadata": {
+        "state": "QUESTION",
+        "hint_level": 1,
+        "kind": "question",
+        "path_used": "template",
+        "experiment_id": "exp-general_misconception",
+        "facts_used": [
+          {
+            "source": "student_prediction",
+            "probabilities": {
+              "00": 1.0
+            }
+          },
+          {
+            "source": "circuit_simulator",
+            "probabilities": {
+              "00": 0.0,
+              "01": 0.0,
+              "10": 0.0,
+              "11": 1.0
+            }
+          }
+        ],
+        "validator_passed": true,
+        "validator_issues": []
+      }
+    },
+    {
+      "turn_number": 2,
+      "student_input": "Now I see qubit 0 controls qubit 1, giving |11> with probability 1.",
+      "mario_output": "Mario: Spot on! Your quantum state prediction matches the simulator perfectly.",
+      "metadata": {
+        "state": "RESOLVED",
+        "hint_level": 1,
+        "kind": "encouragement",
+        "path_used": "template",
+        "experiment_id": null,
+        "facts_used": [
+          {
+            "source": "student_prediction",
+            "probabilities": {
+              "11": 1.0
+            }
+          },
+          {
+            "source": "circuit_simulator",
+            "probabilities": {
+              "00": 0.0,
+              "01": 0.0,
+              "10": 0.0,
+              "11": 1.0
+            }
+          }
+        ],
+        "validator_passed": true,
+        "validator_issues": []
+      }
+    }
+  ],
+  "validation_failures": []
+}

@@ -1,0 +1,378 @@
+{
+  "version": "1.0.0",
+  "entries": [
+    {
+      "id": "measurement-deterministic",
+      "concept_ids": ["measurement_collapse", "superposition"],
+      "name": "Measurement Always Yields Deterministic |0>",
+      "faulty_rule": "Belief that measuring a superposition always produces outcome |0>",
+      "mutation_ref": "drop_gate",
+      "probe_circuits": [
+        {
+          "qubits": 1,
+          "classical_bits": 1,
+          "gates": [
+            {"gate": "h", "targets": [0]},
+            {"gate": "measure", "targets": [0]}
+          ],
+          "measure": false,
+          "shots": 1024
+        }
+      ],
+      "student_prompt_template": "What will be the outcome when you measure qubit q[0] after applying an H gate?",
+      "hint_ladder": [
+        "What quantum state is created when an H gate acts on |0>?",
+        "Look at the amplitudes of |0> and |1> in the state vector. Are they non-zero?",
+        "How does the Born rule relate probability to amplitude magnitudes?",
+        "The Hadamard gate creates state (|0> + |1>)/sqrt(2), so measurement yields |0> 50% of the time and |1> 50% of the time."
+      ],
+      "remediation_experiment": {
+        "title": "Run 1000 Shots on Hadamard State",
+        "description": "Simulate measuring |+> state 1000 times to observe the 50/50 statistical distribution."
+      },
+      "severity": "medium"
+    },
+    {
+      "id": "superposition-not-mixture",
+      "concept_ids": ["superposition", "hadamard_gate"],
+      "name": "Superposition Equals Classical Probabilistic Mixture",
+      "faulty_rule": "Confusing quantum superposition with classical probabilistic mixture, missing phase effects",
+      "mutation_ref": "h_is_classical_mixture",
+      "probe_circuits": [
+        {
+          "qubits": 1,
+          "classical_bits": 1,
+          "gates": [
+            {"gate": "h", "targets": [0]},
+            {"gate": "h", "targets": [0]},
+            {"gate": "measure", "targets": [0]}
+          ],
+          "measure": false,
+          "shots": 1024
+        }
+      ],
+      "student_prompt_template": "What state results from applying two successive Hadamard gates to |0>?",
+      "hint_ladder": [
+        "What operation does a second Hadamard gate perform on a superposition state?",
+        "What are the probability amplitudes for each computational path when H is applied twice?",
+        "Do the probability amplitudes from different paths add constructively or destructively?",
+        "Applying H twice yields H(H|0>) = I|0> = |0> deterministically due to quantum interference, unlike classical random choice."
+      ],
+      "remediation_experiment": {
+        "title": "H-H Interference Test",
+        "description": "Compare classical coin flipping twice vs applying two Hadamard gates."
+      },
+      "severity": "high"
+    },
+    {
+      "id": "hadamard-inverts-classical",
+      "concept_ids": ["hadamard_gate", "single_qubit_gates", "superposition"],
+      "name": "Hadamard Gate is Pauli-X Bit Flip",
+      "faulty_rule": "Thinking H gate is identical to Pauli X bit-flip gate",
+      "mutation_ref": "replace_h_with_x",
+      "probe_circuits": [
+        {
+          "qubits": 1,
+          "classical_bits": 1,
+          "gates": [
+            {"gate": "h", "targets": [0]},
+            {"gate": "measure", "targets": [0]}
+          ],
+          "measure": false,
+          "shots": 1024
+        }
+      ],
+      "student_prompt_template": "Does the H gate simply flip |0> to |1>?",
+      "hint_ladder": [
+        "How does the matrix representation of an H gate differ from a Pauli-X gate?",
+        "Where does the state H|0> lie on the Bloch sphere compared to X|0>?",
+        "Does the H gate produce a single basis state or a linear combination?",
+        "Hadamard maps |0> to (|0>+|1>)/sqrt(2), whereas Pauli-X maps |0> directly to |1>."
+      ],
+      "remediation_experiment": {
+        "title": "Statevector Blochsphere Comparison",
+        "description": "Plot Bloch vectors for X|0> vs H|0>."
+      },
+      "severity": "medium"
+    },
+    {
+      "id": "grover-oracle-bit-flip",
+      "concept_ids": ["oracle", "phase_kickback"],
+      "name": "Grover Oracle Uses Bit-Flip Instead of Phase-Flip",
+      "faulty_rule": "Using X/CNOT directly in Grover oracle without phase kickback target |->",
+      "mutation_ref": "replace_cz_with_cx",
+      "probe_circuits": [
+        {
+          "qubits": 2,
+          "classical_bits": 2,
+          "gates": [
+            {"gate": "h", "targets": [0]},
+            {"gate": "h", "targets": [1]},
+            {"gate": "cz", "targets": [0, 1]},
+            {"gate": "h", "targets": [0]},
+            {"gate": "h", "targets": [1]},
+            {"gate": "measure", "targets": [0]},
+            {"gate": "measure", "targets": [1]}
+          ],
+          "measure": false,
+          "shots": 1024
+        }
+      ],
+      "student_prompt_template": "Why does a raw CNOT without target state |-> fail to act as a Grover oracle?",
+      "hint_ladder": [
+        "How does Grover's search algorithm mark target computational basis states?",
+        "Should an oracle modify measurement probabilities or state vector phases?",
+        "What state must the target qubit be in for a CNOT gate to cause phase kickback?",
+        "The oracle must invert the sign (phase) of target state |x_target>, not flip basis bits directly."
+      ],
+      "remediation_experiment": {
+        "title": "Compare CNOT vs CZ / Phase Kickback",
+        "description": "Measure state vector signs after applying raw CNOT vs CNOT with target in |->."
+      },
+      "severity": "critical"
+    },
+    {
+      "id": "grover-oracle-single-qubit-phase",
+      "concept_ids": ["phase", "oracle"],
+      "name": "Single Qubit Z Gate Used as Multi-Qubit Oracle",
+      "faulty_rule": "Applying single-qubit Z gate as an oracle instead of controlled phase flip across multi-qubits",
+      "mutation_ref": "replace_cz_with_single_z",
+      "probe_circuits": [
+        {
+          "qubits": 2,
+          "classical_bits": 2,
+          "gates": [
+            {"gate": "h", "targets": [0]},
+            {"gate": "h", "targets": [1]},
+            {"gate": "cz", "targets": [0, 1]},
+            {"gate": "h", "targets": [0]},
+            {"gate": "h", "targets": [1]},
+            {"gate": "measure", "targets": [0]},
+            {"gate": "measure", "targets": [1]}
+          ],
+          "measure": false,
+          "shots": 1024
+        }
+      ],
+      "student_prompt_template": "Does Z on q[0] flip the sign of marked multi-qubit state |11> exclusively?",
+      "hint_ladder": [
+        "Which computational basis states are affected when Z is applied to qubit 0?",
+        "Does single-qubit Z change the sign of states other than the target state?",
+        "What type of controlled gate is required to target a specific multi-qubit basis state?",
+        "Multi-qubit state marking requires controlled-phase operations (like CZ) to target a specific joint state."
+      ],
+      "remediation_experiment": {
+        "title": "Statevector Phase Inspection",
+        "description": "Compare amplitudes of Z(q0)|11> and CZ(q0,q1)|11>."
+      },
+      "severity": "high"
+    },
+    {
+      "id": "grover-oracle-cnot-without-hadamard",
+      "concept_ids": ["oracle", "hadamard_gate"],
+      "name": "CNOT in Oracle Omits Target Hadamard Gate",
+      "faulty_rule": "Omitting Hadamard on target ancilla qubit before CNOT in oracle construction",
+      "mutation_ref": "cnot_oracle_omit_target_h",
+      "probe_circuits": [
+        {
+          "qubits": 2,
+          "classical_bits": 2,
+          "gates": [
+            {"gate": "x", "targets": [1]},
+            {"gate": "h", "targets": [1]},
+            {"gate": "h", "targets": [0]},
+            {"gate": "cx", "targets": [0, 1]},
+            {"gate": "h", "targets": [0]},
+            {"gate": "h", "targets": [1]},
+            {"gate": "measure", "targets": [0]},
+            {"gate": "measure", "targets": [1]}
+          ],
+          "measure": false,
+          "shots": 1024
+        }
+      ],
+      "student_prompt_template": "What happens if you run CNOT into an ancilla in |0> instead of |->?",
+      "hint_ladder": [
+        "What state is the ancilla target qubit initialized to before the oracle CNOT?",
+        "How does the output state of CNOT change if the target is in |0> vs |->?",
+        "Which single-qubit gate transforms basis state |1> into phase-kickback state |->?",
+        "Without initial H (and final H) on ancilla initialized to |1>, phase kickback (-1)^f(x) does not occur."
+      ],
+      "remediation_experiment": {
+        "title": "Phase Kickback Ancilla Verification",
+        "description": "Trace state amplitudes with ancilla initialized to |0> vs X then H."
+      },
+      "severity": "high"
+    },
+    {
+      "id": "rule_cnot_copy",
+      "concept_ids": ["cnot_gate", "entanglement"],
+      "name": "CNOT Copies Quantum State (No-Cloning Violation)",
+      "faulty_rule": "CNOT copies quantum state from control to target qubit, creating independent duplicates",
+      "mutation_ref": "cnot_copies_state_product",
+      "probe_circuits": [
+        {
+          "qubits": 2,
+          "classical_bits": 2,
+          "gates": [
+            {"gate": "h", "targets": [0]},
+            {"gate": "cx", "targets": [0, 1]}
+          ],
+          "measure": false,
+          "shots": 1024
+        }
+      ],
+      "student_prompt_template": "Does CNOT(0,1) acting on (|0>+|1>)/sqrt(2) x |0> create two independent |+> states?",
+      "hint_ladder": [
+        "What is the joint statevector after applying CNOT to H|0> tensor |0>?",
+        "How does the joint state vector compare to a separable product state?",
+        "Can a joint quantum state be factored into separate individual qubit states?",
+        "Due to the No-Cloning Theorem, CNOT entangles the qubits rather than creating an independent copy."
+      ],
+      "remediation_experiment": {
+        "title": "Entanglement vs Product State Comparison",
+        "description": "Calculate reduced state purity for (|00>+|11>)/sqrt(2) (purity 0.5) vs (|0>+|1>)(|0>+|1>)/2 (purity 1.0)."
+      },
+      "severity": "critical"
+    },
+    {
+      "id": "rule_measure_no_effect",
+      "concept_ids": ["measurement_collapse"],
+      "name": "Measurement Has No Effect on State",
+      "faulty_rule": "Measurement does not collapse state vector or destroy quantum superposition",
+      "mutation_ref": "drop_mid_circuit_measurement",
+      "probe_circuits": [
+        {
+          "qubits": 1,
+          "classical_bits": 1,
+          "gates": [
+            {"gate": "h", "targets": [0]},
+            {"gate": "measure", "targets": [0]},
+            {"gate": "h", "targets": [0]}
+          ],
+          "measure": false,
+          "shots": 1024
+        }
+      ],
+      "student_prompt_template": "What happens if you insert a Z-basis measurement between two H gates?",
+      "hint_ladder": [
+        "What happens to a quantum state vector when a projective Z-basis measurement occurs?",
+        "If state |+> collapses to |0> or |1>, what state does a subsequent H gate produce?",
+        "Does measuring mid-circuit preserve or destroy quantum superposition?",
+        "Measurement collapses superposition into a basis state, so H after measurement yields a 50/50 mixture instead of pure |0>."
+      ],
+      "remediation_experiment": {
+        "title": "Mid-Circuit Measurement Test",
+        "description": "Compare output of H-H vs H-Measure-H."
+      },
+      "severity": "high"
+    },
+    {
+      "id": "entanglement-local-phase",
+      "concept_ids": ["entanglement", "relative_vs_global_phase"],
+      "name": "Local Phase Gate Alters Entanglement Entropy",
+      "faulty_rule": "Applying Z gate to one qubit of a Bell pair alters its entanglement entropy",
+      "mutation_ref": "ignore_z_phase",
+      "probe_circuits": [
+        {
+          "qubits": 2,
+          "classical_bits": 2,
+          "gates": [
+            {"gate": "h", "targets": [0]},
+            {"gate": "cx", "targets": [0, 1]},
+            {"gate": "z", "targets": [0]},
+            {"gate": "h", "targets": [0]},
+            {"gate": "h", "targets": [1]}
+          ],
+          "measure": false,
+          "shots": 1024
+        }
+      ],
+      "student_prompt_template": "Does applying a local Z gate on q[0] change the entanglement entropy of the Bell state (|00>+|11>)/sqrt(2)?",
+      "hint_ladder": [
+        "What state is produced when a local Z gate acts on qubit 0 of an entangled state?",
+        "What is the reduced density matrix for qubit 0 before and after the Z gate?",
+        "Do local unitary operations change the eigenvalues of the reduced density matrix?",
+        "Local unitaries change relative phase but preserve entanglement entropy S(rho_A) = 1 bit."
+      ],
+      "remediation_experiment": {
+        "title": "Entanglement Entropy Calculation",
+        "description": "Compute S(rho_A) for (|00>+|11>)/sqrt(2) vs (|00>-|11>)/sqrt(2); both equal 1.0."
+      },
+      "severity": "medium"
+    },
+    {
+      "id": "grover-over-iteration",
+      "concept_ids": ["grovers_search", "diffuser"],
+      "name": "Grover Search Over-Iteration",
+      "faulty_rule": "Running Grover iterations N times instead of optimal pi/4 * sqrt(N) times",
+      "mutation_ref": "wrong_grover_iteration_count",
+      "probe_circuits": [
+        {
+          "qubits": 2,
+          "classical_bits": 2,
+          "gates": [
+            {"gate": "h", "targets": [0]},
+            {"gate": "h", "targets": [1]},
+            {"gate": "cz", "targets": [0, 1]},
+            {"gate": "h", "targets": [0]},
+            {"gate": "h", "targets": [1]},
+            {"gate": "x", "targets": [0]},
+            {"gate": "x", "targets": [1]},
+            {"gate": "cz", "targets": [0, 1]},
+            {"gate": "x", "targets": [0]},
+            {"gate": "x", "targets": [1]},
+            {"gate": "h", "targets": [0]},
+            {"gate": "h", "targets": [1]}
+          ],
+          "measure": false,
+          "shots": 1024
+        }
+      ],
+      "student_prompt_template": "What happens to target state probability if you double the optimal Grover iteration count?",
+      "hint_ladder": [
+        "How does the quantum state vector rotate in the 2D subspace during each Grover iteration?",
+        "What happens to the state vector angle if you rotate past 90 degrees?",
+        "Is the target state probability monotonic or periodic with respect to iteration count?",
+        "Grover search is periodic; over-iterating reduces target state probability as the vector rotates back away from the target."
+      ],
+      "remediation_experiment": {
+        "title": "Grover Probability vs Iterations Plot",
+        "description": "Plot target state probability P(target) as a function of iteration count."
+      },
+      "severity": "high"
+    },
+    {
+      "id": "vqe-zero-parameter-init",
+      "concept_ids": ["vqe_parameterization", "vqe_ansatz"],
+      "name": "VQE Zero Parameter Initialization Lockout",
+      "faulty_rule": "Initializing VQE rotation parameters to all zeros gets stuck at zero gradient or saddle point",
+      "mutation_ref": "bad_vqe_parameter_init",
+      "probe_circuits": [
+        {
+          "qubits": 2,
+          "classical_bits": 2,
+          "gates": [
+            {"gate": "ry", "targets": [0], "angle": 3.14159265},
+            {"gate": "ry", "targets": [1], "angle": 3.14159265},
+            {"gate": "cx", "targets": [0, 1]}
+          ],
+          "measure": false,
+          "shots": 1024
+        }
+      ],
+      "student_prompt_template": "Why can initializing all Ry parameters in a VQE ansatz to theta=0 cause gradient descent optimization to stagnate?",
+      "hint_ladder": [
+        "What state vector is prepared by Ry(theta) when theta = 0.0?",
+        "How does the energy gradient dE/dtheta behave at a symmetric zero-parameter state?",
+        "Will gradient descent step away from a state where all parameter gradients evaluate to zero?",
+        "Zero-parameter initialization can lock optimization in local extrema or zero-gradient regions; small random initialization avoids this."
+      ],
+      "remediation_experiment": {
+        "title": "VQE Energy Gradient Evaluation",
+        "description": "Compute energy gradients at theta=[0,0] vs theta=[0.1, 0.05]."
+      },
+      "severity": "medium"
+    }
+  ]
+}

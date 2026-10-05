@@ -6,6 +6,7 @@ from app.backends.cirq_backend import CirqBackend
 from app.backends.qbraid_backend import QBraidBackend
 from app.backends.clifford_backend import CliffordStabilizerBackend
 from app.backends.mps_backend import QiskitMPSBackend
+from app.backends.nvidia_backend import NvidiaCuQuantumBackend
 from app.schemas.backend import BackendMetadata
 
 class BackendRegistry:
@@ -23,6 +24,8 @@ class BackendRegistry:
             "clifford_stabilizer": CliffordStabilizerBackend("clifford_stabilizer"),
             "qiskit_aer_stabilizer": CliffordStabilizerBackend("qiskit_aer_stabilizer"),
             "qiskit_aer_mps": QiskitMPSBackend("qiskit_aer_mps"),
+            "nvidia_cuquantum": NvidiaCuQuantumBackend("nvidia_cuquantum"),
+            "cuquantum": NvidiaCuQuantumBackend("cuquantum"),
         }
 
     def register(self, backend: QuantumBackend):

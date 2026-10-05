@@ -11,6 +11,8 @@ import { VisualLessonPlayerPage } from './pages/VisualLessonPlayerPage';
 import { TeacherPortalPage } from './pages/TeacherPortalPage';
 import { StudentPortalPage } from './pages/StudentPortalPage';
 import { CertificateVerificationPage } from './pages/CertificateVerificationPage';
+import { WasmTestPage } from './pages/WasmTestPage';
+import { PortalPage } from './features/portal';
 import { ThemeProvider } from './features/theme/ThemeContext';
 import { AuthProvider } from './features/auth/AuthContext';
 import { LoginModal } from './features/auth/LoginModal';
@@ -18,6 +20,7 @@ import { SignUpModal } from './features/auth/SignUpModal';
 import { getOnboardingStatus } from './api/onboardingApi';
 import { ErrorBoundary } from './components/common/ErrorBoundary';
 import { GlobalErwinCompanion } from './components/common/GlobalErwinCompanion';
+import { MarioCompanionOverlay } from './components/common/MarioCompanionOverlay';
 import type { CircuitRequest } from './features/circuit/types';
 import { QUANTUM_CURRICULUM, type LessonModule } from './features/learning/curriculumData';
 import type { LessonWorkbenchHandoff } from './features/theory/lessonHandoff';
@@ -34,7 +37,9 @@ export type AppView =
   | 'player'
   | 'teacher-portal'
   | 'student-portal'
-  | 'certificate';
+  | 'portal'
+  | 'certificate'
+  | 'wasm-test';
 
 export interface AppProps {
   initialCircuit?: CircuitRequest;
@@ -127,6 +132,7 @@ export const App: React.FC<AppProps> = ({ initialCircuit, initialRoute, initialL
       if (routeStr.includes('certificate') || routeStr.includes('verify=') || routeStr.includes('cert=')) return 'certificate';
       if (routeStr.includes('teacher')) return 'teacher-portal';
       if (routeStr.includes('student')) return 'student-portal';
+      if (routeStr === 'portal' || routeStr === '/portal' || routeStr === '#portal' || (routeStr.includes('portal') && !routeStr.includes('teacher') && !routeStr.includes('student'))) return 'portal';
       if (routeStr.includes('player')) return 'player';
       if (routeStr.includes('theory-lesson=')) return 'theory-lesson';
       if (routeStr.includes('theory=')) return 'learn';
@@ -138,6 +144,7 @@ export const App: React.FC<AppProps> = ({ initialCircuit, initialRoute, initialL
       if (routeStr === 'onboarding' || routeStr === '/onboarding' || routeStr === '#onboarding') return 'onboarding';
       if (routeStr === 'landing' || routeStr === '/') return 'landing';
       if (routeStr === 'ide' || routeStr === 'studio' || routeStr === '/studio') return 'ide';
+      if (routeStr.includes('wasm') || routeStr === 'wasm-test' || routeStr === '/wasm-test' || routeStr === '#wasm-test') return 'wasm-test';
       if (routeStr === 'lesson-screen' || routeStr === '/lesson-screen') return 'lesson-screen';
     }
     if (typeof window !== 'undefined') {
@@ -150,14 +157,16 @@ export const App: React.FC<AppProps> = ({ initialCircuit, initialRoute, initialL
       if (hash.includes('certificate') || hash.includes('cert') || hash.includes('verify')) return 'certificate';
       if (hash.includes('teacher')) return 'teacher-portal';
       if (hash.includes('student')) return 'student-portal';
+      if (hash === '#portal' || (hash.includes('portal') && !hash.includes('teacher') && !hash.includes('student'))) return 'portal';
       if (hash.includes('player')) return 'player';
       if (hash.includes('theory-lesson')) return 'theory-lesson';
       if (hash.includes('skill-tree') || hash.includes('learn') || hash.includes('academy') || hash.includes('curriculum') || hash.includes('how-it-works') || hash.includes('faq')) return 'learn';
       if (hash.includes('login')) return 'login';
       if (hash.includes('signup') || hash.includes('register')) return 'signup';
       if (hash.includes('onboarding')) return 'onboarding';
+      if (hash.includes('wasm')) return 'wasm-test';
       if (hash === '#landing') return 'landing';
-      if (hash === '#ide' || hash === '#studio') return 'ide';
+      if (hash.startsWith('#ide') || hash.startsWith('#studio') || hash.includes('lesson=') || hash.includes('assessment=')) return 'ide';
       if (hash === '#lesson-screen') return 'lesson-screen';
 
       // 2. Query param routing
@@ -165,9 +174,11 @@ export const App: React.FC<AppProps> = ({ initialCircuit, initialRoute, initialL
       if (search.includes('collab') || search.includes('room=')) return 'ide';
       if (search.includes('teacher')) return 'teacher-portal';
       if (search.includes('student')) return 'student-portal';
+      if (search.includes('portal') && !search.includes('teacher') && !search.includes('student')) return 'portal';
       if (search.includes('player')) return 'player';
       if (search.includes('theory-lesson=')) return 'theory-lesson';
       if (search.includes('theory=')) return 'learn';
+      if (search.includes('wasm')) return 'wasm-test';
       if (search.includes('lesson=') || search.includes('assessment=')) return 'ide';
 
       // 3. Path routing
@@ -175,6 +186,7 @@ export const App: React.FC<AppProps> = ({ initialCircuit, initialRoute, initialL
       if (path.includes('/collab') || path.includes('/collaborative')) return 'ide';
       if (path.includes('/teacher')) return 'teacher-portal';
       if (path.includes('/student')) return 'student-portal';
+      if (path === '/portal' || path.startsWith('/portal/') || (path.includes('/portal') && !path.includes('/teacher') && !path.includes('/student'))) return 'portal';
       if (path.includes('/player')) return 'player';
       if (path.includes('/theory-lesson')) return 'theory-lesson';
       if (path.includes('/login')) return 'login';
@@ -182,6 +194,7 @@ export const App: React.FC<AppProps> = ({ initialCircuit, initialRoute, initialL
       if (path.includes('/onboarding')) return 'onboarding';
       if (path.includes('/learn') || path.includes('/academy')) return 'learn';
       if (path.includes('/studio') || path.includes('/ide')) return 'ide';
+      if (path.includes('/wasm')) return 'wasm-test';
       if (path.includes('/lesson-screen')) return 'lesson-screen';
     }
     return import.meta.env.MODE === 'test' ? 'ide' : 'landing';
@@ -215,19 +228,31 @@ export const App: React.FC<AppProps> = ({ initialCircuit, initialRoute, initialL
       setActiveTheoryLessonId(parseTheoryLessonId());
     };
 
+    const onLogout = () => {
+      setCurrentView('landing');
+      setActiveLessonId(undefined);
+      setActiveAssessment(null);
+      setActiveTheoryLessonId(undefined);
+      setActiveCircuit(undefined);
+      setActiveLessonHandoff(null);
+    };
+
     window.addEventListener('popstate', onPopState);
     window.addEventListener('hashchange', onPopState);
+    window.addEventListener('qualution:logout', onLogout);
     return () => {
       window.removeEventListener('popstate', onPopState);
       window.removeEventListener('hashchange', onPopState);
+      window.removeEventListener('qualution:logout', onLogout);
     };
   }, []);
 
   const navigateTo = (
-    view: AppView,
+    view: AppView | string,
     params?: { theoryLessonId?: string; experimentId?: string; handoff?: LessonWorkbenchHandoff }
   ) => {
-    setCurrentView(view);
+    const resolvedView = parseRoute(view);
+    setCurrentView(resolvedView);
     
     // Update theory lesson ID if provided
     if (params?.theoryLessonId !== undefined) {
@@ -235,19 +260,19 @@ export const App: React.FC<AppProps> = ({ initialCircuit, initialRoute, initialL
     }
 
     // Handle Phase 13 structured lesson handoff
-    if (view === 'ide' && params?.handoff) {
+    if (resolvedView === 'ide' && params?.handoff) {
       setActiveLessonHandoff(params.handoff);
       setActiveCircuit(params.handoff.circuit);
       const handoffLessonId = params.handoff.lessonId;
       setActiveLessonId(handoffLessonId || undefined);
       setActiveAssessment(resolveAssessment(handoffLessonId));
-    } else if (view === 'ide' && !params?.handoff && !params?.experimentId) {
+    } else if (resolvedView === 'ide' && !params?.handoff && !params?.experimentId) {
       // Direct IDE access clears prior lesson handoff
       setActiveLessonHandoff(null);
     }
     
     // Handle experiment preset for Workbench
-    if (view === 'ide' && params?.experimentId) {
+    if (resolvedView === 'ide' && params?.experimentId) {
       setActiveLessonHandoff(null);
       import('./features/learning/experimentPresets').then(({ getExperimentPreset }) => {
         const experiment = getExperimentPreset(params.experimentId);
@@ -265,16 +290,16 @@ export const App: React.FC<AppProps> = ({ initialCircuit, initialRoute, initialL
     if (typeof window !== 'undefined' && window.history) {
       let targetUrl = '';
       
-      if (view === 'theory-lesson' && params?.theoryLessonId) {
+      if (resolvedView === 'theory-lesson' && params?.theoryLessonId) {
         targetUrl = `?theory-lesson=${params.theoryLessonId}`;
-      } else if (view === 'ide' && params?.experimentId) {
+      } else if (resolvedView === 'ide' && params?.experimentId) {
         targetUrl = `?experiment=${params.experimentId}`;
       } else {
-        const targetHash = view === 'landing' ? '' : `#${view}`;
+        const targetHash = resolvedView === 'landing' ? '' : `#${resolvedView}`;
         targetUrl = targetHash ? `${window.location.pathname}${targetHash}` : window.location.pathname;
       }
       
-      window.history.pushState({ view }, '', targetUrl);
+      window.history.pushState({ view: resolvedView }, '', targetUrl);
     }
   };
 
@@ -428,6 +453,17 @@ export const App: React.FC<AppProps> = ({ initialCircuit, initialRoute, initialL
           <VisualLessonPlayerPage onNavigateBack={() => navigateTo('learn')} />
         )}
 
+        {currentView === 'wasm-test' && (
+          <WasmTestPage />
+        )}
+
+        {currentView === 'portal' && (
+          <PortalPage
+            onNavigateHome={() => navigateTo('landing')}
+            onOpenLogin={() => setIsLoginModalOpen(true)}
+          />
+        )}
+
         {currentView === 'theory-lesson' && activeTheoryLessonId && (
           <ErrorBoundary context="Theory Lesson Player" onError={(error) => {
             console.error('[App] Lesson player error:', error);
@@ -471,101 +507,15 @@ export const App: React.FC<AppProps> = ({ initialCircuit, initialRoute, initialL
           onSuccess={handlePostAuthSuccess}
         />
 
-        {/* Phase A: Persistent Global Erwin Avatar (Mounted ONCE at root) */}
-        <GlobalErwinCompanion size={96} />
+        {/* Persistent Global Mario Companion — Active across entire website on all pages */}
+        <GlobalErwinCompanion size={96} showBubble={false} />
 
-        {/* Persistent Floating Demo Role Switcher HUD */}
-        <aside
-          aria-label="Demo Portal Switcher"
-          style={{
-            position: 'fixed',
-            bottom: '1.25rem',
-            left: '1.25rem',
-            zIndex: 9999,
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.35rem',
-            padding: '0.35rem 0.45rem',
-            borderRadius: '9999px',
-            backgroundColor: 'rgba(3, 8, 20, 0.92)',
-            border: '1px solid rgba(56, 189, 248, 0.35)',
-            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.7), 0 0 15px rgba(56, 189, 248, 0.2)',
-            backdropFilter: 'blur(16px)',
-          }}
-        >
-          <button
-            type="button"
-            onClick={() => navigateTo('teacher-portal')}
-            style={{
-              padding: '0.4rem 0.85rem',
-              borderRadius: '9999px',
-              fontSize: '0.74rem',
-              fontWeight: 700,
-              cursor: 'pointer',
-              border: 'none',
-              transition: 'all 0.2s',
-              backgroundColor: currentView === 'teacher-portal' ? '#0284c7' : 'transparent',
-              color: currentView === 'teacher-portal' ? '#ffffff' : '#94a3b8',
-              boxShadow: currentView === 'teacher-portal' ? '0 0 12px rgba(2, 132, 199, 0.6)' : 'none',
-            }}
-          >
-            🧑‍🏫 Teacher Portal
-          </button>
-          <button
-            type="button"
-            onClick={() => navigateTo('student-portal')}
-            style={{
-              padding: '0.4rem 0.85rem',
-              borderRadius: '9999px',
-              fontSize: '0.74rem',
-              fontWeight: 700,
-              cursor: 'pointer',
-              border: 'none',
-              transition: 'all 0.2s',
-              backgroundColor: currentView === 'student-portal' ? '#059669' : 'transparent',
-              color: currentView === 'student-portal' ? '#ffffff' : '#94a3b8',
-              boxShadow: currentView === 'student-portal' ? '0 0 12px rgba(5, 150, 105, 0.6)' : 'none',
-            }}
-          >
-            👨‍🎓 Student Portal
-          </button>
-          <button
-            type="button"
-            onClick={() => navigateTo('ide')}
-            style={{
-              padding: '0.4rem 0.85rem',
-              borderRadius: '9999px',
-              fontSize: '0.74rem',
-              fontWeight: 700,
-              cursor: 'pointer',
-              border: 'none',
-              transition: 'all 0.2s',
-              backgroundColor: currentView === 'ide' ? '#0ea5e9' : 'transparent',
-              color: currentView === 'ide' ? '#ffffff' : '#94a3b8',
-              boxShadow: currentView === 'ide' ? '0 0 12px rgba(14, 165, 233, 0.6)' : 'none',
-            }}
-          >
-            ⚛️ Studio Workbench
-          </button>
-          <button
-            type="button"
-            onClick={() => navigateTo('certificate')}
-            style={{
-              padding: '0.4rem 0.85rem',
-              borderRadius: '9999px',
-              fontSize: '0.74rem',
-              fontWeight: 700,
-              cursor: 'pointer',
-              border: 'none',
-              transition: 'all 0.2s',
-              backgroundColor: currentView === 'certificate' ? '#d97706' : 'transparent',
-              color: currentView === 'certificate' ? '#ffffff' : '#94a3b8',
-              boxShadow: currentView === 'certificate' ? '0 0 12px rgba(217, 119, 6, 0.6)' : 'none',
-            }}
-          >
-            🎓 Certificate
-          </button>
-        </aside>
+        {/* Mario Misconception Engine Companion Overlay — Feature Flag Gated */}
+        {import.meta.env.VITE_ENABLE_MARIO_ENGINE === 'true' && (
+          <MarioCompanionOverlay currentTurn={null} />
+        )}
+
+
       </AuthProvider>
     </ThemeProvider>
   );

@@ -272,7 +272,7 @@ def assess_onboarding(
     and returns a tailored learning path.
     """
     user_id = "usr-sih-evaluator-001"
-    if authorization:
+    if isinstance(authorization, str) and authorization:
         token = authorization.replace("Bearer ", "").strip()
         if token.startswith("jwt-eval-"):
             user_id = token.replace("jwt-eval-", "")

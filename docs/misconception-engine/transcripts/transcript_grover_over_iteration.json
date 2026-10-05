@@ -1,0 +1,106 @@
+{
+  "scenario": "transcript_grover_over_iteration",
+  "misconception_id": "grover-over-iteration",
+  "turns": [
+    {
+      "turn_number": 1,
+      "student_input": "I doubled the iterations to 2, so the probability should be higher, but it says 25% on all four states.",
+      "mario_output": "Mario: What do you observe about the state probabilities if we test this alternative circuit probe?",
+      "metadata": {
+        "state": "DISAMBIGUATION",
+        "hint_level": 1,
+        "kind": "disambiguation",
+        "path_used": "template",
+        "experiment_id": null,
+        "facts_used": [
+          {
+            "source": "student_prediction",
+            "probabilities": {
+              "00": 0.25,
+              "01": 0.25,
+              "10": 0.25,
+              "11": 0.25
+            }
+          },
+          {
+            "source": "circuit_simulator",
+            "probabilities": {
+              "00": 0.0,
+              "01": 0.0,
+              "10": 0.0,
+              "11": 1.0
+            }
+          }
+        ],
+        "validator_passed": true,
+        "validator_issues": []
+      }
+    },
+    {
+      "turn_number": 2,
+      "student_input": "Does 2 iterations rotate past the target?",
+      "mario_output": "Mario: What do you observe about the state probabilities if we test this alternative circuit probe?",
+      "metadata": {
+        "state": "DISAMBIGUATION",
+        "hint_level": 1,
+        "kind": "disambiguation",
+        "path_used": "template",
+        "experiment_id": null,
+        "facts_used": [
+          {
+            "source": "student_prediction",
+            "probabilities": {
+              "00": 0.25,
+              "01": 0.25,
+              "10": 0.25,
+              "11": 0.25
+            }
+          },
+          {
+            "source": "circuit_simulator",
+            "probabilities": {
+              "00": 0.0,
+              "01": 0.0,
+              "10": 0.0,
+              "11": 1.0
+            }
+          }
+        ],
+        "validator_passed": true,
+        "validator_issues": []
+      }
+    },
+    {
+      "turn_number": 3,
+      "student_input": "I checked 1 iteration and it reached 100% |11>!",
+      "mario_output": "Mario: Spot on! Your quantum state prediction matches the simulator perfectly.",
+      "metadata": {
+        "state": "RESOLVED",
+        "hint_level": 1,
+        "kind": "encouragement",
+        "path_used": "template",
+        "experiment_id": null,
+        "facts_used": [
+          {
+            "source": "student_prediction",
+            "probabilities": {
+              "11": 1.0
+            }
+          },
+          {
+            "source": "circuit_simulator",
+            "probabilities": {
+              "00": 0.0,
+              "01": 0.0,
+              "10": 0.0,
+              "11": 1.0
+            }
+          }
+        ],
+        "validator_passed": true,
+        "validator_issues": []
+      }
+    }
+  ],
+  "validation_failures": []
+}

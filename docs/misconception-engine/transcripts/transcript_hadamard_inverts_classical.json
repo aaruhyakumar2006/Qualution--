@@ -1,0 +1,95 @@
+{
+  "scenario": "transcript_hadamard_inverts_classical",
+  "misconception_id": "hadamard-inverts-classical",
+  "turns": [
+    {
+      "turn_number": 1,
+      "student_input": "I think H|0> inverts it to |1>.",
+      "mario_output": "Mario: Where does the state H|0> lie on the Bloch sphere compared to X|0>?",
+      "metadata": {
+        "state": "QUESTION",
+        "hint_level": 2,
+        "kind": "question",
+        "path_used": "template",
+        "experiment_id": "exp-hadamard-inverts-classical",
+        "facts_used": [
+          {
+            "source": "student_prediction",
+            "probabilities": {
+              "1": 1.0
+            }
+          },
+          {
+            "source": "circuit_simulator",
+            "probabilities": {
+              "0": 0.5,
+              "1": 0.5
+            }
+          }
+        ],
+        "validator_passed": true,
+        "validator_issues": []
+      }
+    },
+    {
+      "turn_number": 2,
+      "student_input": "Still looks like it inverts to 1.",
+      "mario_output": "Mario: Before we continue, let's check your understanding of single qubit gates.",
+      "metadata": {
+        "state": "QUESTION",
+        "hint_level": 1,
+        "kind": "question",
+        "path_used": "template",
+        "experiment_id": null,
+        "facts_used": [
+          {
+            "source": "student_prediction",
+            "probabilities": {
+              "1": 1.0
+            }
+          },
+          {
+            "source": "circuit_simulator",
+            "probabilities": {
+              "0": 0.5,
+              "1": 0.5
+            }
+          }
+        ],
+        "validator_passed": true,
+        "validator_issues": []
+      }
+    },
+    {
+      "turn_number": 3,
+      "student_input": "Ah, running the experiment shows equal 50% on both 0 and 1.",
+      "mario_output": "Mario: Spot on! Your quantum state prediction matches the simulator perfectly.",
+      "metadata": {
+        "state": "RESOLVED",
+        "hint_level": 1,
+        "kind": "encouragement",
+        "path_used": "template",
+        "experiment_id": null,
+        "facts_used": [
+          {
+            "source": "student_prediction",
+            "probabilities": {
+              "0": 0.5,
+              "1": 0.5
+            }
+          },
+          {
+            "source": "circuit_simulator",
+            "probabilities": {
+              "0": 0.5,
+              "1": 0.5
+            }
+          }
+        ],
+        "validator_passed": true,
+        "validator_issues": []
+      }
+    }
+  ],
+  "validation_failures": []
+}
